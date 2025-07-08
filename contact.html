@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="ThemesLay">
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="50x50" href="assets/images/favicon.png">
+
+  <!-- theme css -->
+  <link href="static/css/main.css" rel="stylesheet">
+  <title>PlayGame - esports & Gaming HTML5 Website Template</title>
+</head>
+
+<body>
+  <!-- light dark theme switch -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check2" viewbox="0 0 16 16">
+      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+    </symbol>
+    <symbol id="circle-half" viewbox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+    </symbol>
+    <symbol id="moon-stars-fill" viewbox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+    </symbol>
+    <symbol id="sun-fill" viewbox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+    </symbol>
+  </svg>
+  <!-- preloader section -->
+  <div class="page-loader">
+    <div class="loader"></div>
+    <div class="overlay">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+  <!-- page wrapper section -->
+  <div id="wrapper"></div>
+
+  <!-- header-area -->
+  <header class="trans-header">
+    <div id="sticky-header" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="nav-toggle"><i class="bi bi-list"></i></div>
+            <div class="menu-wrap">
+              <nav class="menu-nav">
+                <div class="brand">
+                  <a href="index.html"><img src="static/picture/brand.png" alt="Brand"></a>
+                </div>
+                <div class="menu-navbar-wrap main-menu d-none d-xl-flex">
+                  <ul class="navigation">
+                    <li class="menu-item-children"><a href="javascript:void(0)">Home</a>
+                      <ul class="sub-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index-banner.html">Home Banner</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="javascript:void(0)">Tournament</a>
+                      <ul class="sub-menu">
+                        <li><a href="tournament.html">Tournament</a></li>
+                        <li><a href="tournament-details.html">Tournament Details</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="javascript:void(0)">Pages</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="menu-item-children"><a href="javascript:void(0)">Gaming Shop</a>
+                          <ul class="sub-menu">
+                            <li><a href="shop.html">Shop Page</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="sign-up.html">Sign up</a></li>
+                        <li><a href="reset-password.html">Forgot Password</a></li>
+                        <li><a href="player.html">Player</a></li>
+                        <li><a href="player-details.html">Player Details</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services-details.html">Services Details</a></li>
+                        <li><a href="privacy.html">Privacy Page</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="404.html">404 Page</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="about.html">Gallery</a>
+                      <ul class="sub-menu">
+                        <li><a href="gallery.html">Gallery 4 columns</a></li>
+                        <li><a href="gallery-mixed.html">Gallery Mixed</a></li>
+                        <li><a href="gallery-details.html">Gallery Detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="javascript:void(0)">Blogs</a>
+                      <ul class="sub-menu">
+                        <li><a href="blog.html">Our Blog</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                      </ul>
+                    </li>
+                    <li class="active"><a href="">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="menu-second">
+                  <ul class="list-wrap">
+                    <li class="search d-none d-sm-block"><a href="javascript:void(0)"><i class="bi bi-search"></i></a>
+                    </li>
+                    <li class="d-none d-sm-block"><a href="login.html"><i class="bi bi-person-lock fs-5"></i></a>
+                    </li>
+                    <li class="side-toggle d-none d-sm-block"><a href="javascript:void(0)"><i class="bi bi-list-nested"></i></a>
+                    </li>
+                    <li class="switch">
+                      <!-- color mode  -->
+                      <div class="nav-item dropdown ms-lg-0">
+                        <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
+                          <svg class="svg-sprt my-1 theme-icon-active">
+                            <use href="#circle-half"></use>
+                          </svg>
+                          <span class="d-none ms-2" id="bd-theme-text">Toggle theme</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="bd-theme-text">
+                          <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                              <svg class="svg-sprt opacity-50 theme-icon">
+                                <use href="#sun-fill"></use>
+                              </svg>
+                              <svg class="svg-sprt ms-auto d-none">
+                                <use href="#check2"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                              <svg class="svg-sprt opacity-50 theme-icon">
+                                <use href="#moon-stars-fill"></use>
+                              </svg>
+
+                              <svg class="svg-sprt ms-auto d-none">
+                                <use href="#check2"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                              <svg class="svg-sprt opacity-50 theme-icon">
+                                <use href="#circle-half"></use>
+                              </svg>
+                              <svg class="svg-sprt ms-auto d-none">
+                                <use href="#check2"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+      <nav class="mobile-menu-box">
+        <div class="close-btn"><i class="bi bi-x-lg"></i></div>
+        <div class="nav-brand">
+          <a href="index.html"><img src="static/picture/brand.png" alt="Logo"></a>
+        </div>
+        <div class="mobile-menu-wrap">
+          <!-- container for mobile header menu -->
+        </div>
+        <div class="menu-search-box">
+          <form action="#">
+            <input type="text" placeholder="Search here...">
+            <button><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="mobile-menu-ovelay"></div>
+    <!-- End Mobile Menu -->
+
+    <!-- header-search -->
+    <div class="search-box-wrap">
+      <div class="search-bg"></div>
+      <div class="search-close">
+        <span><i class="bi bi-x-lg"></i></span>
+      </div>
+      <div class="search-con text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="title"><span>Your Query</span> ...</h2>
+              <div class="form">
+                <form action="#">
+                  <input type="text" name="search" placeholder="Search here" required="">
+                  <button class="search-btn"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-search-end -->
+
+    <!-- offCanvas-area -->
+    <div class="offCanvas-box">
+      <div class="box-body">
+        <div class="top">
+          <div class="brand">
+            <a href="index.html"><img src="static/picture/brand.png" alt="Logo"></a>
+          </div>
+          <div class="offCanvas-close">
+            <i class="bi bi-x-lg"></i>
+          </div>
+        </div>
+        <div class="content">
+          <div class="newsletter">
+            <h4 class="small-title">Subscribe</h4>
+            <p>Let's talk about our digital play games </p>
+            <form action="#" class="form">
+              <input type="email" placeholder="Latest Games & Updates">
+              <button type="submit"><i class="bi bi-send-fill"></i></button>
+            </form>
+          </div>
+          <div class="contact-box">
+            <h4 class="small-title">Help Info</h4>
+            <ul class="list">
+              <li><a href="tel:93332225557"><i class="bi bi-phone me-3"></i>+9 111 222 3456</a></li>
+              <li><a href="mailto:info@webmail.com"><i class="bi bi-envelope-paper me-3"></i>info@example.com</a></li>
+              <li><i class="bi bi-geo-alt me-3"></i>W-5, New Central Park, New York</li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <h4 class="small-title">Connect with us</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="offCanvas-overlay"></div>
+    <!-- offCanvas-area-end -->
+
+  </header>
+  <!-- header-area-end -->
+  <!-- breadcrumb section -->
+  <div class="breadcrumb-area hero">
+    <div class="container">
+      <!-- row -->
+      <div class="row ">
+        <!-- col -->
+        <div class="col-12 align-self-center">
+          <!-- breadcrumb -->
+          <div class="page-breadcrumb">
+            <h2 class="display-1 text-uppercase mb-3 head text-effect text-shadow">Contact Us</h2>
+            <div class="mb-3">
+              <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact section -->
+  <section class="contact-sec py-8">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 animate__animated wow animate__fadeInUp" data-wow-delay="1.5s">
+          <div class="row">
+            <div class="col-12 col-lg-12 contact-form">
+              <div class="position-relative contact-form-box">
+                <h2 class="fs-5 mb-4 fw-bold theme-text-primary mt-5 mt-lg-0">
+                  Leave Us a Message
+                </h2>
+                <form id="contact-form" method="post" action="contact.php" class="send">
+                  <div class="messages"></div>
+                  <div class="controls">
+                    <div class="mb-4">
+                      <input id="form_name" type="text" name="name" class="custum-input" placeholder="Your Name" required="required" data-error="Name is required.">
+                    </div>
+                    <div class="mb-4">
+                      <input id="form_email" type="email" name="email" class="custum-input" placeholder="Your Email" required="required" data-error="Valid Email is required.">
+                    </div>
+                    <div class="mb-4">
+                      <input id="form_phone" type="Number" name="phone" class="custum-input" placeholder="Your Phone" required="required" data-error="Please specify your Phone.">
+                    </div>
+                    <div class="mb-4">
+                      <textarea id="form_message" name="message" class="custum-input textarea" placeholder="Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    </div>
+                    <div class="mb-4">
+                      <div class="g-recaptcha" data-sitekey="6LchAR0qAAAAALFet34GfOSbNqlgJk89PgLfUIwT"></div>
+                    </div>
+                    <div class="mb-1 btn-wrap">
+                      <button type="Submit" value="Send message" class="btn-primary custom-btn-primary">
+                        Send Request
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 align-self-center position-relative mb-4 mt-5 mt-lg-0">
+          <div class="row mb-5">
+            <div class="col-12 animate__animated wow animate__fadeInUp" data-wow-delay="1.7s">
+              <h2 class="mb-0 display-2 font-black head text-effect text-shadow">
+                Get in Touch
+              </h2>
+              <p class="mb-0 theme-text-accent-two fw-bold">All Contact Info are in this page. You can found the
+                relevant. </p>
+            </div>
+          </div>
+          <div class="mb-5 animate__animated wow animate__fadeInUp" data-wow-delay="1.9s">
+            <div class="d-flex mb-3">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <svg width="60" height="60" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.538 27.538C6.073 27.538 0 21.465 0 14.001C0 6.53601 6.073 0.462006 13.538 0.462006C15.109 0.462006 16.648 0.730006 18.11 1.25501C18.889 1.53501 19.293 2.39401 19.013 3.17201C18.733 3.95101 17.876 4.35501 17.096 4.07501C15.959 3.66601 14.762 3.45801 13.537 3.45801C7.725 3.45801 2.996 8.18701 2.996 14C2.996 19.812 7.725 24.541 13.537 24.541C19.35 24.541 24.079 19.812 24.079 14C24.079 12.684 23.84 11.4 23.368 10.185C23.068 9.41401 23.451 8.54501 24.222 8.24601C24.992 7.94301 25.861 8.32901 26.161 9.10001C26.768 10.663 27.076 12.311 27.076 13.999C27.076 21.465 21.002 27.538 13.538 27.538Z" fill="#EE5ABD"></path>
+                    <path d="M27.983 1.25301L27.884 1.06901H27.71C27.63 1.06901 27.464 1.06901 26.5 1.55901C17.235 6.27101 13.968 12.895 13.232 14.67C11.055 11.425 8.871 10.73 7.399 10.73C7.043 10.73 6.689 10.77 6.348 10.849C5.896 10.955 5.799 11.201 5.779 11.338C5.745 11.593 5.923 11.845 6.268 12.034C9.252 13.658 11.519 17.999 12.603 20.443C12.858 21.019 13.157 21.14 13.361 21.14H13.362C13.574 21.14 13.877 21.012 14.108 20.407C15.479 16.826 19.476 7.90201 26.966 2.35401C27.974 1.60601 28.048 1.45001 27.983 1.25301Z" fill="#EE5ABD"></path>
+                  </svg>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h3 class="fs-2 fw-bold theme-text-accent-one mb-0 align-self-center">
+                    Contact Information
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <p class="fs-4 mb-3 theme-text-accent-two fw-bold"><i class="bi bi-phone me-3"></i> 123 321 555
+              </p>
+              <a href="#" class="fs-4 fw-bold mb-3 d-inline-block"><i class="bi bi-envelope-paper me-3"></i>info@example.com</a>
+              <p class="fs-4 mb-0 theme-text-accent-two fw-bold"><i class="bi bi-geo-alt me-3"></i>New Park Avenue,
+                West-7
+                Street, New Del</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- map section -->
+  <div class=" d-flex flex-column">
+    <iframe src="static/file/embed" style="border:0; width: 100%; height: 500px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- contact section -->
+  <section class="contact-help py-5">
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <div class="p-4 theme-border-effect theme-box-shadow theme-bg-accent-three">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img src="static/picture/chat.svg" alt="chat">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="theme-text-accent-one fs-4 fw-bold">Chat with us</h3>
+                    <p class="theme-text-accent-one mb-0 fs-5">24/7 365 days a year</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-5">
+              <div class="p-4 theme-border-effect theme-box-shadow theme-bg-accent-three">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img src="static/picture/support.svg" alt="support">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="theme-text-accent-one fs-4 fw-bold">Support Now</h3>
+                    <a href="mailto:info@example.com" class="theme-text-accent-one mb-0 fs-5">info@example.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 offset-lg-1">
+          <div class="p-1 p-lg-4">
+            <p class="mt-3 mb-3 theme-text-white fs-4 fw-bold">Play online games within 1 mins</p>
+            <h4 class="mb-0 display-2 font-black head text-effect text-shadow">Need any help? We are here!
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer Part -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="row">
+            <div class="col">
+              <h3 class="h5 fw-bold mb-4">Quick Links</h3>
+              <ul class="link-list">
+                <li><a href="index.html" class="footer-link-effect">Home</a></li>
+                <li><a href="about.html" class="footer-link-effect">About Us</a></li>
+                <li><a href="tournament.html" class="footer-link-effect">Fantasy Games</a></li>
+                <li><a href="about.html#experience-sec" class="footer-link-effect">How To Play</a></li>
+              </ul>
+              <!-- quick link end -->
+            </div>
+            <div class="col">
+              <h3 class="h5 fw-bold mb-4">Support</h3>
+              <ul class="link-list">
+                <li><a href="privacy.html" class="footer-link-effect">Privacy</a></li>
+                <li><a href="" class="footer-link-effect">Contact</a></li>
+                <li><a href="tournament.html" class="footer-link-effect">Online Games</a></li>
+                <li><a href="player.html" class="footer-link-effect">Player System</a></li>
+              </ul>
+              <!-- Support link end -->
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 text-center mb-5 mb-lg-0">
+          <img src="static/picture/brand.png" class="img-fluid mb-4 logo" alt="Brand light">
+          <p class="px-5 mb-0 font-small lh-lg">Bearing a simple yet catchy concept of earning money
+            via the
+            best
+            fantasy game Apps
+            while watching your favourite sports</p>
+          <h3 class="mt-4 h5 fw-bold mb-4">Connect with us</h3>
+          <div class="d-flex justify-content-center social mt-3">
+            <a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
+            <a href="javascript:void(0)"><i class="bi bi-twitter-x"></i></a>
+            <a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
+            <a href="javascript:void(0)"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 offset-lg-1">
+          <h3 class="h5 fw-bold mb-4">Download App</h3>
+          <div class="mb-5 d-flex flex-lg-column">
+            <a href="javascript:void(0)" class="download-btn">
+              <div class="flex-shrink-0">
+                <img src="static/picture/play-icon.png" class="img-fluid" alt="Google-Play" title="Google-Play">
+              </div>
+              <div class="flex-grow-1 ms-2 font-extra-small text-start theme-text-white">
+                <span class="mb-0">Get it on</span>
+                <span class="mb-0 fw-bold d-block">Google Play</span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="ms-3 ms-lg-0 mt-lg-3 download-btn">
+              <div class="flex-shrink-0">
+                <img src="static/picture/apple-icon.png" class="img-fluid" alt="apple" title="apple">
+              </div>
+              <div class="flex-grow-1 ms-2 font-extra-small text-start theme-text-white">
+                <span class="mb-0">Get it on</span>
+                <span class="mb-0 fw-bold d-block">App Store</span>
+              </div>
+            </a>
+          </div>
+          <!-- download our app end -->
+        </div>
+      </div>
+      <!-- footer bottom Part -->
+      <div class="row align-items-center mt-5">
+        <div class="col-12 col-lg-6 offset-lg-3">
+          <div class="p-1">
+            <h3 class="mt-3 h5 fw-bold mb-4 text-center">Multiple Payment Option</h3>
+            <ul class="d-flex justify-content-between align-items-center">
+              <li><img src="static/picture/visa.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/mastercard.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/upi.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-01.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-02.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-03.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-04.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-05.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-06.png" class="img-fluid" alt="payment"></li>
+            </ul>
+          </div>
+          <!-- payment methods end -->
+        </div>
+        <div class="col-12 text-center mt-3">
+          <p class="mb-0 font-small">Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></a>,
+            All
+            rights
+            reserved.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#wrapper" data-type="section-switch" class="scrollup"><i class="bi bi-chevron-double-up"></i></a>
+  </footer>
+
+  <!-- cursor dot part -->
+  <div class="cursor"></div>
+  <div class="cursor-f"></div>
+
+
+  <!-- js file attached -->
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/gsap.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/jquery.magnific-popup.min.js"></script>
+  <script src="static/js/color-modes.js"></script>
+  <script src="static/js/main.js"></script>
+  <!-- Contact Form js files -->
+  <script src="static/js/contact.js"></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script> -->
+</body>
+
+</html>

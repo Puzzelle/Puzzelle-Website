@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="ThemesLay">
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="50x50" href="assets/images/favicon.png">
+
+  <!-- theme css -->
+  <link href="static/css/main.css" rel="stylesheet">
+  <title>PlayGame - esports & Gaming HTML5 Website Template</title>
+</head>
+
+<body>
+  <!-- light dark theme switch -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check2" viewbox="0 0 16 16">
+      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+    </symbol>
+    <symbol id="circle-half" viewbox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+    </symbol>
+    <symbol id="moon-stars-fill" viewbox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+    </symbol>
+    <symbol id="sun-fill" viewbox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+    </symbol>
+  </svg>
+  <!-- preloader section -->
+  <div class="page-loader">
+    <div class="loader"></div>
+    <div class="overlay">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+  <!-- page wrapper section -->
+  <div id="wrapper"></div>
+
+  <!-- header-area -->
+  <header class="trans-header">
+    <div id="sticky-header" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="nav-toggle"><i class="bi bi-list"></i></div>
+            <div class="menu-wrap">
+              <nav class="menu-nav">
+                <div class="brand">
+                  <a href="index.html"><img src="static/picture/brand.png" alt="Brand"></a>
+                </div>
+                <div class="menu-navbar-wrap main-menu d-none d-xl-flex">
+                  <ul class="navigation">
+                    <li class="menu-item-children"><a href="javascript:void(0)">Home</a>
+                      <ul class="sub-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index-banner.html">Home Banner</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="javascript:void(0)">Tournament</a>
+                      <ul class="sub-menu">
+                        <li><a href="tournament.html">Tournament</a></li>
+                        <li><a href="tournament-details.html">Tournament Details</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children active"><a href="javascript:void(0)">Pages</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="menu-item-children active"><a href="javascript:void(0)">Gaming Shop</a>
+                          <ul class="sub-menu">
+                            <li class="active"><a href="">Shop Page</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="sign-up.html">Sign up</a></li>
+                        <li><a href="reset-password.html">Forgot Password</a></li>
+                        <li><a href="player.html">Player</a></li>
+                        <li><a href="player-details.html">Player Details</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services-details.html">Services Details</a></li>
+                        <li><a href="privacy.html">Privacy Page</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="404.html">404 Page</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="about.html">Gallery</a>
+                      <ul class="sub-menu">
+                        <li><a href="gallery.html">Gallery 4 columns</a></li>
+                        <li><a href="gallery-mixed.html">Gallery Mixed</a></li>
+                        <li><a href="gallery-details.html">Gallery Detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="javascript:void(0)">Blogs</a>
+                      <ul class="sub-menu">
+                        <li><a href="blog.html">Our Blog</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="menu-second">
+                  <ul class="list-wrap">
+                    <li class="search d-none d-sm-block"><a href="javascript:void(0)"><i class="bi bi-search"></i></a>
+                    </li>
+                    <li class="d-none d-sm-block"><a href="login.html"><i class="bi bi-person-lock fs-5"></i></a>
+                    </li>
+                    <li class="side-toggle d-none d-sm-block"><a href="javascript:void(0)"><i class="bi bi-list-nested"></i></a>
+                    </li>
+                    <li class="switch">
+                      <!-- color mode  -->
+                      <div class="nav-item dropdown ms-lg-0">
+                        <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
+                          <svg class="svg-sprt my-1 theme-icon-active">
+                            <use href="#circle-half"></use>
+                          </svg>
+                          <span class="d-none ms-2" id="bd-theme-text">Toggle theme</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="bd-theme-text">
+                          <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                              <svg class="svg-sprt opacity-50 theme-icon">
+                                <use href="#sun-fill"></use>
+                              </svg>
+                              <svg class="svg-sprt ms-auto d-none">
+                                <use href="#check2"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                              <svg class="svg-sprt opacity-50 theme-icon">
+                                <use href="#moon-stars-fill"></use>
+                              </svg>
+
+                              <svg class="svg-sprt ms-auto d-none">
+                                <use href="#check2"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                              <svg class="svg-sprt opacity-50 theme-icon">
+                                <use href="#circle-half"></use>
+                              </svg>
+                              <svg class="svg-sprt ms-auto d-none">
+                                <use href="#check2"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+      <nav class="mobile-menu-box">
+        <div class="close-btn"><i class="bi bi-x-lg"></i></div>
+        <div class="nav-brand">
+          <a href="index.html"><img src="static/picture/brand.png" alt="Logo"></a>
+        </div>
+        <div class="mobile-menu-wrap">
+          <!-- container for mobile header menu -->
+        </div>
+        <div class="menu-search-box">
+          <form action="#">
+            <input type="text" placeholder="Search here...">
+            <button><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="mobile-menu-ovelay"></div>
+    <!-- End Mobile Menu -->
+
+    <!-- header-search -->
+    <div class="search-box-wrap">
+      <div class="search-bg"></div>
+      <div class="search-close">
+        <span><i class="bi bi-x-lg"></i></span>
+      </div>
+      <div class="search-con text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="title"><span>Your Query</span> ...</h2>
+              <div class="form">
+                <form action="#">
+                  <input type="text" name="search" placeholder="Search here" required="">
+                  <button class="search-btn"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-search-end -->
+
+    <!-- offCanvas-area -->
+    <div class="offCanvas-box">
+      <div class="box-body">
+        <div class="top">
+          <div class="brand">
+            <a href="index.html"><img src="static/picture/brand.png" alt="Logo"></a>
+          </div>
+          <div class="offCanvas-close">
+            <i class="bi bi-x-lg"></i>
+          </div>
+        </div>
+        <div class="content">
+          <div class="newsletter">
+            <h4 class="small-title">Subscribe</h4>
+            <p>Let's talk about our digital play games </p>
+            <form action="#" class="form">
+              <input type="email" placeholder="Latest Games & Updates">
+              <button type="submit"><i class="bi bi-send-fill"></i></button>
+            </form>
+          </div>
+          <div class="contact-box">
+            <h4 class="small-title">Help Info</h4>
+            <ul class="list">
+              <li><a href="tel:93332225557"><i class="bi bi-phone me-3"></i>+9 111 222 3456</a></li>
+              <li><a href="mailto:info@webmail.com"><i class="bi bi-envelope-paper me-3"></i>info@example.com</a></li>
+              <li><i class="bi bi-geo-alt me-3"></i>W-5, New Central Park, New York</li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <h4 class="small-title">Connect with us</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="offCanvas-overlay"></div>
+    <!-- offCanvas-area-end -->
+
+  </header>
+  <!-- header-area-end -->
+  <!-- breadcrumb section -->
+  <div class="breadcrumb-area hero">
+    <div class="container">
+      <!-- row -->
+      <div class="row ">
+        <!-- col -->
+        <div class="col-12 align-self-center">
+          <!-- breadcrumb -->
+          <div class="page-breadcrumb">
+            <h2 class="display-1 text-uppercase mb-3 head text-effect text-shadow">Game shop</h2>
+            <div class="mb-3">
+              <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li>shop</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- shop view section -->
+  <div class="column-shop py-8">
+    <div class="container">
+      <div class="row">
+        <!-- filter section -->
+        <aside class="col-lg-3 col-md-4 mb-6 mb-md-0">
+          <div class="offcanvas offcanvas-start offcanvas-collapse" tabindex="-1" id="offcanvasCategory" aria-labelledby="offcanvasCategoryLabel">
+            <div class="offcanvas-header d-lg-none">
+              <h5 class="offcanvas-title" id="offcanvasCategoryLabel">Filter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+              <!-- filter clear section -->
+              <div class="mb-4 border-bottom pb-3 ">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-4 fw-bold">Filters</span>
+                  <a href="#" class="font-extra-small">Clear All</a>
+                </div>
+              </div>
+              <div class="mb-4 box-sec">
+                <!-- title -->
+                <h5 class="mb-3 fs-5 fw-bold">Categories</h5>
+                <!-- nav -->
+                <ul class="nav nav-category" id="categoryCollapseMenu">
+                  <li class="nav-item border-bottom w-100 collapsed" data-bs-toggle="collapse" data-bs-target="#categoryFlushOne" aria-expanded="false" aria-controls="categoryFlushOne"><a href="#" class="nav-link"><i class="bi bi-chevron-right"></i>Tournament</a>
+                    <!-- accordion collapse -->
+                    <div id="categoryFlushOne" class="accordion-collapse collapse" data-bs-parent="#categoryCollapseMenu">
+                      <div>
+                        <!-- nav -->
+                        <ul class="nav flex-column ms-3">
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">League</a></li>
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Go Pro</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- repetable -->
+                  <li class="nav-item border-bottom w-100 collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><a href="#" class="nav-link">
+                      <i class="bi bi-chevron-right"></i> E-sports
+                    </a>
+                    <!-- collapse -->
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#categoryCollapseMenu">
+                      <div>
+                        <ul class="nav flex-column ms-3">
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Black</a></li>
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Favourite</a></li>
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Go Pro</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- repetable -->
+                  <li class="nav-item border-bottom w-100 collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"><a href="#" class="nav-link">
+                      <i class="bi bi-chevron-right"></i>Controller
+                    </a>
+                    <!-- collapse -->
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#categoryCollapseMenu">
+                      <div>
+                        <ul class="nav flex-column ms-3">
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Black</a></li>
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Favourite</a></li>
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Go Pro</a></li>
+                          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Other</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- repetable -->
+                </ul>
+              </div>
+              <div class="mb-4 box-sec">
+                <h5 class="mb-3 fs-5 fw-bold">Filter by Type</h5>
+                <!-- form check -->
+                <div class="form-check mb-2">
+                  <!-- input -->
+                  <input class="form-check-input" type="checkbox" value="" id="eGrocery" checked="">
+                  <label class="form-check-label" for="eGrocery">All Products</label>
+                </div>
+                <!-- form check -->
+                <div class="form-check mb-2">
+                  <!-- input -->
+                  <input class="form-check-input" type="checkbox" value="" id="DealShare">
+                  <label class="form-check-label" for="DealShare">Game</label>
+                </div>
+                <!-- form check -->
+                <div class="form-check mb-2">
+                  <!-- input -->
+                  <input class="form-check-input" type="checkbox" value="" id="Dmart">
+                  <label class="form-check-label" for="Dmart">Equipment</label>
+                </div>
+                <!-- form check -->
+                <div class="form-check mb-2">
+                  <!-- input -->
+                  <input class="form-check-input" type="checkbox" value="" id="Blinkit">
+                  <label class="form-check-label" for="Blinkit">Utility</label>
+                </div>
+              </div>
+              <div class="mb-4 box-sec">
+                <!-- price -->
+                <h5 class="mb-3 fs-5 fw-bold">Price Filter</h5>
+                <div>
+                  <!-- range -->
+                  <div class="slider-area">
+                    <div class="slider-area-wrapper">
+                      <div id="priceRange" class="slider"></div>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <small class="text-muted fw-bold">Price $:</small>
+                    <span id="priceRange-value" class="small fw-bold"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- brand -->
+              <div class="mb-4 box-sec">
+                <h5 class="mb-3 fs-5 fw-bold">Filter by Brands</h5>
+                <!-- form check -->
+                <div class="form-check mb-2">
+                  <!-- input -->
+                  <input class="form-check-input" type="checkbox" value="" id="Gold">
+                  <label class="form-check-label" for="Gold">Gold</label>
+                </div>
+                <!-- form check -->
+                <div class="form-check mb-2">
+                  <!-- input -->
+                  <input class="form-check-input" type="checkbox" value="" id="Lilly">
+                  <label class="form-check-label" for="Lilly">Silver</label>
+                </div>
+                <!-- form check -->
+                <div class="form-check mb-2">
+                  <!-- input -->
+                  <input class="form-check-input" type="checkbox" value="" id="Diamond">
+                  <label class="form-check-label" for="Diamond">Diamond</label>
+                </div>
+                <!-- form check -->
+                <div class="form-check mb-2">
+                  <!-- input -->
+                  <input class="form-check-input" type="checkbox" value="" id="Brocolos">
+                  <label class="form-check-label" for="Brocolos">Vintege</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="col-lg-9 col-md-12">
+          <!-- sort & filter button -->
+          <div class="d-lg-flex justify-content-between align-items-center align-items-center">
+            <p class="fw-bold mb-3 mb-lg-0">Showing 1–9 of 15 results</p>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-column flex-sm-row mb-3 mb-lg-0">
+                <!-- select option -->
+                <select class="border p-2" aria-label="Default select example">
+                  <option selected="">Sort by: Featured</option>
+                  <option value="Low to High">Price: Low to High</option>
+                  <option value="High to Low"> Price: High to Low</option>
+                  <option value="Avg. Rating"> Avg. Rating</option>
+                </select>
+              </div>
+              <!-- filter mobile button -->
+              <div class="d-lg-none">
+                <a class="btn text-muted border rounded-0" data-bs-toggle="offcanvas" href="#offcanvasCategory" role="button" aria-controls="offcanvasCategory"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter me-2">
+                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                  </svg> Filters</a>
+              </div>
+            </div>
+          </div>
+          <!-- products listing section -->
+          <div class="row mt-5">
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card-wrap">
+                <div class="con-img-wrap m-auto product-quick-view">
+                  <img src="static/picture/gallery-product01.png" class="img-fluid mx-auto d-block" alt="product picture">
+                  <div class="view">
+                    <a class="view-btn wishlist">
+                      <i class="bi bi-heart-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="con-wrap mt-4">
+                  <a href="shop-details.html" class="mb-2 text text-truncate">Computer keyboard BG Teclado Gaming</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="align-self-center fs-6 fw-bold theme-text-accent-two">
+                      E-sports
+                    </div>
+                    <div class="align-self-center product-price fs-6 me-4">
+                      <i class="bi bi-currency-dollar"></i><span class="fw-bold">29</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card-wrap">
+                <div class="con-img-wrap m-auto product-quick-view">
+                  <img src="static/picture/gallery-product02.png" class="img-fluid mx-auto d-block" alt="product picture">
+                  <div class="view">
+                    <a class="view-btn wishlist">
+                      <i class="bi bi-heart-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="con-wrap mt-4">
+                  <a href="shop-details.html" class="mb-2 text text-truncate">Video Game Dots Mouse</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="align-self-center fs-6 fw-bold theme-text-accent-two">
+                      E-sports
+                    </div>
+                    <div class="align-self-center product-price fs-6 me-4">
+                      <i class="bi bi-currency-dollar"></i><span class="fw-bold">39</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card-wrap">
+                <div class="con-img-wrap m-auto product-quick-view">
+                  <img src="static/picture/gallery-product03.png" class="img-fluid mx-auto d-block" alt="product picture">
+                  <div class="view">
+                    <a class="view-btn wishlist">
+                      <i class="bi bi-heart-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="con-wrap mt-4">
+                  <a href="shop-details.html" class="mb-2 text text-truncate">Destiny 2 Game
+                    Controllers</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="align-self-center fs-6 fw-bold theme-text-accent-two">
+                      E-sports
+                    </div>
+                    <div class="align-self-center product-price fs-6 me-4">
+                      <i class="bi bi-currency-dollar"></i><span class="fw-bold">39</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card-wrap">
+                <div class="con-img-wrap m-auto product-quick-view">
+                  <img src="static/picture/gallery-product04.png" class="img-fluid mx-auto d-block" alt="product picture">
+                  <div class="view">
+                    <a class="view-btn wishlist">
+                      <i class="bi bi-heart-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="con-wrap mt-4">
+                  <a href="shop-details.html" class="mb-2 text text-truncate">Nintendo Switch Pro Classic Controller</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="align-self-center fs-6 fw-bold theme-text-accent-two">
+                      E-sports
+                    </div>
+                    <div class="align-self-center product-price fs-6 me-4">
+                      <i class="bi bi-currency-dollar"></i><span class="fw-bold">39</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card-wrap">
+                <div class="con-img-wrap m-auto product-quick-view">
+                  <img src="static/picture/gallery-product05.png" class="img-fluid mx-auto d-block" alt="product picture">
+                  <div class="view">
+                    <a class="view-btn wishlist">
+                      <i class="bi bi-heart-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="con-wrap mt-4">
+                  <a href="shop-details.html" class="mb-2 text text-truncate">Gamer Backlight Computer Mouse,
+                    Keyboard</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="align-self-center fs-6 fw-bold theme-text-accent-two">
+                      E-sports
+                    </div>
+                    <div class="align-self-center product-price fs-6 me-4">
+                      <i class="bi bi-currency-dollar"></i><span class="fw-bold">39</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card-wrap">
+                <div class="con-img-wrap m-auto product-quick-view">
+                  <img src="static/picture/gallery-product06.png" class="img-fluid mx-auto d-block" alt="product picture">
+                  <div class="view">
+                    <a class="view-btn wishlist">
+                      <i class="bi bi-heart-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="con-wrap mt-4">
+                  <a href="shop-details.html" class="mb-2 text text-truncate">Video Game Mouse Mats</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="align-self-center fs-6 fw-bold theme-text-accent-two">
+                      E-sports
+                    </div>
+                    <div class="align-self-center product-price fs-6 me-4">
+                      <i class="bi bi-currency-dollar"></i><span class="fw-bold">39</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card-wrap">
+                <div class="con-img-wrap m-auto product-quick-view">
+                  <img src="static/picture/gallery-product07.png" class="img-fluid mx-auto d-block" alt="product picture">
+                  <div class="view">
+                    <a class="view-btn wishlist">
+                      <i class="bi bi-heart-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="con-wrap mt-4">
+                  <a href="shop-details.html" class="mb-2 text text-truncate">Gaming Desktop Computers</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="align-self-center fs-6 fw-bold theme-text-accent-two">
+                      E-sports
+                    </div>
+                    <div class="align-self-center product-price fs-6 me-4">
+                      <i class="bi bi-currency-dollar"></i><span class="fw-bold">39</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card-wrap">
+                <div class="con-img-wrap m-auto product-quick-view">
+                  <img src="static/picture/gallery-product08.png" class="img-fluid mx-auto d-block" alt="product picture">
+                  <div class="view">
+                    <a class="view-btn wishlist">
+                      <i class="bi bi-heart-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="con-wrap mt-4">
+                  <a href="shop-details.html" class="mb-2 text text-truncate">Xbox 360 Wireless Headset Headphones</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="align-self-center fs-6 fw-bold theme-text-accent-two">
+                      E-sports
+                    </div>
+                    <div class="align-self-center product-price fs-6 me-4">
+                      <i class="bi bi-currency-dollar"></i><span class="fw-bold">39</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card-wrap">
+                <div class="con-img-wrap m-auto product-quick-view">
+                  <img src="static/picture/gallery-product09.png" class="img-fluid mx-auto d-block" alt="product picture">
+                  <div class="view">
+                    <a class="view-btn wishlist">
+                      <i class="bi bi-heart-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="con-wrap mt-4">
+                  <a href="shop-details.html" class="mb-2 text text-truncate">Video Game Dots Mouse</a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="align-self-center fs-6 fw-bold theme-text-accent-two">
+                      E-sports
+                    </div>
+                    <div class="align-self-center product-price fs-6 me-4">
+                      <i class="bi bi-currency-dollar"></i><span class="fw-bold">39</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- repetable -->
+          </div>
+          <!-- pagination section -->
+          <div class="row mt-4">
+            <div class="col">
+              <!-- nav -->
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="page-nav">
+                  <ul class="pagination">
+                    <li class="page-item disabled prev">
+                      <a class="page-link" href="#" tabindex="-1"><i class="bi bi-arrow-left"></i></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item next">
+                      <a class="page-link" href="#"><i class="bi bi-arrow-right"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact section -->
+  <section class="contact-help py-5">
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <div class="p-4 theme-border-effect theme-box-shadow theme-bg-accent-three">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img src="static/picture/chat.svg" alt="chat">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="theme-text-accent-one fs-4 fw-bold">Chat with us</h3>
+                    <p class="theme-text-accent-one mb-0 fs-5">24/7 365 days a year</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-5">
+              <div class="p-4 theme-border-effect theme-box-shadow theme-bg-accent-three">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img src="static/picture/support.svg" alt="support">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h3 class="theme-text-accent-one fs-4 fw-bold">Support Now</h3>
+                    <a href="mailto:info@example.com" class="theme-text-accent-one mb-0 fs-5">info@example.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 offset-lg-1">
+          <div class="p-1 p-lg-4">
+            <p class="mt-3 mb-3 theme-text-white fs-4 fw-bold">Play online games within 1 mins</p>
+            <h4 class="mb-0 display-2 font-black head text-effect text-shadow">Need any help? We are here!
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer Part -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="row">
+            <div class="col">
+              <h3 class="h5 fw-bold mb-4">Quick Links</h3>
+              <ul class="link-list">
+                <li><a href="index.html" class="footer-link-effect">Home</a></li>
+                <li><a href="about.html" class="footer-link-effect">About Us</a></li>
+                <li><a href="tournament.html" class="footer-link-effect">Fantasy Games</a></li>
+                <li><a href="about.html#experience-sec" class="footer-link-effect">How To Play</a></li>
+              </ul>
+              <!-- quick link end -->
+            </div>
+            <div class="col">
+              <h3 class="h5 fw-bold mb-4">Support</h3>
+              <ul class="link-list">
+                <li><a href="privacy.html" class="footer-link-effect">Privacy</a></li>
+                <li><a href="contact.html" class="footer-link-effect">Contact</a></li>
+                <li><a href="tournament.html" class="footer-link-effect">Online Games</a></li>
+                <li><a href="player.html" class="footer-link-effect">Player System</a></li>
+              </ul>
+              <!-- Support link end -->
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 text-center mb-5 mb-lg-0">
+          <img src="static/picture/brand.png" class="img-fluid mb-4 logo" alt="Brand light">
+          <p class="px-5 mb-0 font-small lh-lg">Bearing a simple yet catchy concept of earning money
+            via the
+            best
+            fantasy game Apps
+            while watching your favourite sports</p>
+          <h3 class="mt-4 h5 fw-bold mb-4">Connect with us</h3>
+          <div class="d-flex justify-content-center social mt-3">
+            <a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
+            <a href="javascript:void(0)"><i class="bi bi-twitter-x"></i></a>
+            <a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
+            <a href="javascript:void(0)"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 offset-lg-1">
+          <h3 class="h5 fw-bold mb-4">Download App</h3>
+          <div class="mb-5 d-flex flex-lg-column">
+            <a href="javascript:void(0)" class="download-btn">
+              <div class="flex-shrink-0">
+                <img src="static/picture/play-icon.png" class="img-fluid" alt="Google-Play" title="Google-Play">
+              </div>
+              <div class="flex-grow-1 ms-2 font-extra-small text-start theme-text-white">
+                <span class="mb-0">Get it on</span>
+                <span class="mb-0 fw-bold d-block">Google Play</span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="ms-3 ms-lg-0 mt-lg-3 download-btn">
+              <div class="flex-shrink-0">
+                <img src="static/picture/apple-icon.png" class="img-fluid" alt="apple" title="apple">
+              </div>
+              <div class="flex-grow-1 ms-2 font-extra-small text-start theme-text-white">
+                <span class="mb-0">Get it on</span>
+                <span class="mb-0 fw-bold d-block">App Store</span>
+              </div>
+            </a>
+          </div>
+          <!-- download our app end -->
+        </div>
+      </div>
+      <!-- footer bottom Part -->
+      <div class="row align-items-center mt-5">
+        <div class="col-12 col-lg-6 offset-lg-3">
+          <div class="p-1">
+            <h3 class="mt-3 h5 fw-bold mb-4 text-center">Multiple Payment Option</h3>
+            <ul class="d-flex justify-content-between align-items-center">
+              <li><img src="static/picture/visa.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/mastercard.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/upi.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-01.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-02.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-03.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-04.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-05.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-06.png" class="img-fluid" alt="payment"></li>
+            </ul>
+          </div>
+          <!-- payment methods end -->
+        </div>
+        <div class="col-12 text-center mt-3">
+          <p class="mb-0 font-small">Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></a>,
+            All
+            rights
+            reserved.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#wrapper" data-type="section-switch" class="scrollup"><i class="bi bi-chevron-double-up"></i></a>
+  </footer>
+
+  <!-- cursor dot part -->
+  <div class="cursor"></div>
+  <div class="cursor-f"></div>
+
+
+  <!-- js file attached -->
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/gsap.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/jquery.magnific-popup.min.js"></script>
+  <script src="static/js/color-modes.js"></script>
+  <script src="static/js/main.js"></script>
+  <!-- pricing slider js files -->
+  <script src="static/js/nouislider.min.js"></script>
+  <script src="static/js/wNumb.min.js"></script>
+  <!-- page script -->
+  <script>
+    // price range slider
+    var t = document.getElementById("priceRange");
+    noUiSlider.create(t, {
+      connect: !0,
+      behaviour: "tap",
+      start: [49, 199],
+      range: {
+        'min': [6],
+        'max': [300]
+      },
+      pips: {
+        format: wNumb({
+          decimals: 1,
+          thousand: ".",
+          prefix: "$"
+        })
+      }
+    });
+    var e = document.getElementById("priceRange-value");
+    t.noUiSlider.on("update", (function (t) {
+      e.innerHTML = t.join(" - ")
+    }
+    ));
+
+  </script>
+</body>
+
+</html>

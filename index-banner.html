@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="ThemesLay">
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="50x50" href="assets/images/favicon.png">
+
+  <!-- theme css -->
+  <link href="static/css/main.css" rel="stylesheet">
+  <title>PlayGame - esports & Gaming HTML5 Website Template</title>
+</head>
+
+<body>
+  <!-- light dark theme switch -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check2" viewbox="0 0 16 16">
+      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+    </symbol>
+    <symbol id="circle-half" viewbox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+    </symbol>
+    <symbol id="moon-stars-fill" viewbox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+    </symbol>
+    <symbol id="sun-fill" viewbox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+    </symbol>
+  </svg>
+  <!-- preloader section -->
+  <div class="page-loader">
+    <div class="loader"></div>
+    <div class="overlay">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+  <!-- page wrapper section -->
+  <div id="wrapper"></div>
+
+  <!-- header-area -->
+  <header>
+    <div id="sticky-header" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="nav-toggle"><i class="bi bi-list"></i></div>
+            <div class="menu-wrap">
+              <nav class="menu-nav">
+                <div class="brand">
+                  <a href="index.html"><img src="static/picture/brand.png" alt="Brand"></a>
+                </div>
+                <div class="menu-navbar-wrap main-menu d-none d-xl-flex">
+                  <ul class="navigation m-auto">
+                    <li class="menu-item-children active"><a href="javascript:void(0)">Home</a>
+                      <ul class="sub-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="">Home Banner</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="javascript:void(0)">Tournament</a>
+                      <ul class="sub-menu">
+                        <li><a href="tournament.html">Tournament</a></li>
+                        <li><a href="tournament-details.html">Tournament Details</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="javascript:void(0)">Pages</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="menu-item-children"><a href="javascript:void(0)">Gaming Shop</a>
+                          <ul class="sub-menu">
+                            <li><a href="shop.html">Shop Page</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="sign-up.html">Sign up</a></li>
+                        <li><a href="reset-password.html">Forgot Password</a></li>
+                        <li><a href="player.html">Player</a></li>
+                        <li><a href="player-details.html">Player Details</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services-details.html">Services Details</a></li>
+                        <li><a href="privacy.html">Privacy Page</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="404.html">404 Page</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="about.html">Gallery</a>
+                      <ul class="sub-menu">
+                        <li><a href="gallery.html">Gallery 4 columns</a></li>
+                        <li><a href="gallery-mixed.html">Gallery Mixed</a></li>
+                        <li><a href="gallery-details.html">Gallery Detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-children"><a href="javascript:void(0)">Blogs</a>
+                      <ul class="sub-menu">
+                        <li><a href="blog.html">Our Blog</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="menu-second">
+                  <ul class="list-wrap">
+                    <li class="search d-none d-sm-block"><a href="javascript:void(0)"><i class="bi bi-search"></i></a>
+                    </li>
+                    <li class="d-none d-sm-block"><a href="login.html"><i class="bi bi-person-fill-lock fs-5"></i></a>
+                    </li>
+                    <li class="side-toggle d-none d-sm-block"><a href="#"><i class="bi bi-list-nested"></i></a>
+                    </li>
+                    <li class="switch">
+                      <!-- color mode  -->
+                      <div class="nav-item dropdown ms-lg-0">
+                        <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
+                          <svg class="svg-sprt my-1 theme-icon-active">
+                            <use href="#circle-half"></use>
+                          </svg>
+                          <span class="d-none ms-2" id="bd-theme-text">Toggle theme</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="bd-theme-text">
+                          <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                              <svg class="svg-sprt opacity-50 theme-icon">
+                                <use href="#sun-fill"></use>
+                              </svg>
+                              <svg class="svg-sprt ms-auto d-none">
+                                <use href="#check2"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                              <svg class="svg-sprt opacity-50 theme-icon">
+                                <use href="#moon-stars-fill"></use>
+                              </svg>
+
+                              <svg class="svg-sprt ms-auto d-none">
+                                <use href="#check2"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                              <svg class="svg-sprt opacity-50 theme-icon">
+                                <use href="#circle-half"></use>
+                              </svg>
+                              <svg class="svg-sprt ms-auto d-none">
+                                <use href="#check2"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+      <nav class="mobile-menu-box">
+        <div class="close-btn"><i class="bi bi-x-lg"></i></div>
+        <div class="nav-brand">
+          <a href="index.html"><img src="static/picture/brand.png" alt="Logo"></a>
+        </div>
+        <div class="mobile-menu-wrap">
+          <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        </div>
+        <div class="menu-search-box">
+          <form action="#">
+            <input type="text" placeholder="Search here...">
+            <button><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="mobile-menu-ovelay"></div>
+    <!-- End Mobile Menu -->
+
+    <!-- header-search -->
+    <div class="search-box-wrap">
+      <div class="search-bg"></div>
+      <div class="search-close">
+        <span><i class="bi bi-x-lg"></i></span>
+      </div>
+      <div class="search-con text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="title"><span>Search Here</span> ...</h2>
+              <div class="form">
+                <form action="#">
+                  <input type="text" name="search" placeholder="Type Query here" required="">
+                  <button class="search-btn"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-search-end -->
+
+    <!-- offCanvas-area -->
+    <div class="offCanvas-box">
+      <div class="box-body">
+        <div class="top">
+          <div class="brand">
+            <a href="index.html"><img src="static/picture/brand.png" alt="Logo"></a>
+          </div>
+          <div class="offCanvas-close">
+            <i class="bi bi-x-lg"></i>
+          </div>
+        </div>
+        <div class="content">
+          <div class="newsletter">
+            <h4 class="small-title">Subscribe</h4>
+            <p>Let's talk about our digital play games </p>
+            <form action="#" class="form">
+              <input type="email" placeholder="Latest Games & Updates">
+              <button type="submit"><i class="bi bi-send-fill"></i></button>
+            </form>
+          </div>
+          <div class="contact-box">
+            <h4 class="small-title">Help Info</h4>
+            <ul class="list">
+              <li><a href="tel:93332225557"><i class="bi bi-phone me-3"></i>+9 111 222 3456</a></li>
+              <li><a href="mailto:info@webmail.com"><i class="bi bi-envelope-paper me-3"></i>info@example.com</a></li>
+              <li><i class="bi bi-geo-alt me-3"></i>W-5, New Central Park, New York</li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <h4 class="small-title">Connect with us</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="offCanvas-overlay"></div>
+    <!-- offCanvas-area-end -->
+
+  </header>
+  <!-- header-area-end -->
+
+  <!-- hero banner section -->
+  <section class="hero-single">
+    <div class="owl-carousel owl-theme" id="hero-single-slider">
+      <div class="hero-single-items set-bg" data-setbg="assets/images/hero/hero-bg.jpg">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="hero-con">
+              <h2 class="heading mb-4 display-2 font-black head text-effect text-shadow">NFT Game Development Company
+              </h2>
+              <p>Enter the realm of limitless possibilities and level up your gaming experience</p>
+              <div class="btn-wrap justify-content-center">
+                <button class="btn-primary custom-btn-primary">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- repetable -->
+      <div class="hero-single-items set-bg" data-setbg="assets/images/hero/hero-bg-2.jpg">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="hero-con">
+              <h2 class="heading mb-4 display-2 font-black head text-effect text-shadow">NFT Game Development
+                Services</h2>
+              <p>As an award-winning NFT game development company,</p>
+              <div class="btn-wrap justify-content-center">
+                <button class="btn-primary custom-btn-primary">Join Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- repetable -->
+    </div>
+  </section>
+  <!-- about us section -->
+  <section class="about-sec py-8">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-6 col-lg-6 col-md-10">
+          <p class="mt-3 mb-3 theme-text-primary fs-4 fw-bold">About The Process</p>
+          <h2 class="mb-4 display-2 font-black head text-effect text-shadow">Future Game Development</h2>
+          <p class="mb-3 fw-bold text-justify">We’re at the forefront of modern gaming
+            development,
+            delivering immersive experiences and cutting-edge technology. Our talented team of developers, designers,
+            and storytellers collaborates to create
+            engaging, high-quality games that captivate players worldwide.
+            <br><br>
+            We specialize in innovative gameplay
+            mechanics, stunning graphics,
+            and seamless user experiences across multiple platforms. With a focus on creativity and technical
+            excellence, we embrace
+            the latest advancements in gaming technology to push boundaries and redefine interactive entertainment.
+          </p>
+          <div class="group mt-5 btn-wrap">
+            <button class="btn-primary custom-btn-primary">Learn More</button>
+            <span class="ms-3">
+              <button class="btn custom-btn-secondary wave-button" type="button" id="video-button">
+                <i class="bi bi-play fs-4"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 order-0 order-lg-2">
+          <div class="about-images">
+            <div></div>
+            <img src="static/picture/about-shape.png" alt="background" class="img-fluid">
+            <img src="static/picture/about-pic.png" alt="image" class="main-pic">
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between mt-5">
+            <div class="fact-development">
+              <div class="icon"><img src="static/picture/trophy.png" alt="trophy"></div>
+              <div class="content">
+                <h5>Excellence Gaming</h5>
+                <span>Experience</span>
+              </div>
+            </div>
+            <div class="fact-development">
+              <div class="icon"><img src="static/picture/team.png" alt="team"></div>
+              <div class="content">
+                <h5>Extraordinary Experts</h5>
+                <span>Team</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- trending games section -->
+  <section class="trending pb-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 mb-5">
+          <h1 class="mb-0 display-2 font-black head text-effect text-shadow text-center">Our Games</h1>
+        </div>
+      </div>
+      <!-- game tab section -->
+      <div class="row align-items-center mb-5 game-tab">
+        <div class="col-12 col-lg-10">
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-game1-tab" data-bs-toggle="pill" data-bs-target="#pills-game1" type="button" role="tab" aria-controls="pills-game1" aria-selected="true">
+                <img src="static/picture/game-tab01.png" alt="img">
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-game2-tab" data-bs-toggle="pill" data-bs-target="#pills-game2" type="button" role="tab" aria-controls="pills-game2" aria-selected="false">
+                <img src="static/picture/game-tab02.png" alt="img">
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-game3-tab" data-bs-toggle="pill" data-bs-target="#pills-game3" type="button" role="tab" aria-controls="pills-game3" aria-selected="false">
+                <img src="static/picture/game-tab03.png" alt="img">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- tab content section -->
+        <div class="col-12 tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-game1" role="tabpanel" aria-labelledby="pills-game1-tab" tabindex="0">
+            <div class="row">
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game01.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player + Multiplayer</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Survival Sandbox, Adventure</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$11.95</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game02.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Crawl Dungeon, Action</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$13.25</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game03.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Multiplayer</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Education Survival Sandbox</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$21.19</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game04.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player + Multiplayer</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Deadshot Shooter Person</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$19.35</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game05.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player + Multiplayer</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Coob's Farm Escape Adventure</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$17.25</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game06.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Elemental Merge Arcade Game</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$21.90</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-game2" role="tabpanel" aria-labelledby="pills-game2-tab" tabindex="0">
+            <div class="row">
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game04.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player + Multiplayer</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Deadshot Shooter Person</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$19.35</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game05.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player + Multiplayer</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Coob's Farm Escape Adventure</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$17.25</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game06.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Elemental Merge Arcade Game</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$21.90</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-game3" role="tabpanel" aria-labelledby="pills-game3-tab" tabindex="0">
+            <div class="row">
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game01.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player + Multiplayer</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Survival Sandbox, Adventure</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$11.95</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game02.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Single-player</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Crawl Dungeon, Action</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$13.25</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+              <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                <div class="row g-0 list">
+                  <div class="col-12 col-md-4 col-xxl-4">
+                    <figure class="image-icon mb-4 mb-md-0">
+                      <img src="static/picture/game03.png" class="img-fluid" alt="Gaming Experience">
+                    </figure>
+                  </div>
+                  <div class="col-12 col-md-8 col-xxl-8">
+                    <div class="ps-3">
+                      <p class="fs-6 mb-1 theme-text-accent-one">Multiplayer</p>
+                      <span class="d-block fs-6 fw-bold mb-2 theme-text-accent-one">Education Survival Sandbox</span>
+                      <span class="d-flex text-warning mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                      <div class="d-flex align-items-center justify-content-between btn-wrap mt-2">
+                        <button class="btn-primary px-5" onclick="location.href='tournament.html';">Play Now</button>
+                        <p class="fs-4 mb-0 theme-text-secondary fw-bold">$21.19</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- repetable item -->
+            </div>
+          </div>
+        </div>
+        <!-- /end tab content section -->
+      </div>
+
+    </div>
+  </section>
+  <!-- next match / tournaments section -->
+  <section class="tournaments py-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <h1 class="mb-0 display-2 font-black head text-effect text-shadow">Next Match</h1>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row mt-5 align-items-center position-relative g-0">
+            <div class="col box-wrap">
+              <div class="row">
+                <div class="col-12 col-lg-3 offset-lg-1">
+                  <div class="game-card text-center mb-4">
+                    <figure class="mb-0 icon-bg">
+                      <img src="static/picture/teamA-logo.png" class="img-fluid" alt="Fantasy Games">
+                    </figure>
+                    <h3 class="h2 fw-bold mb-3 mt-3 theme-text-white">Samuarai</h3>
+                    <p class="fs-6 fw-bold theme-text-primary mb-0">Team Tournet A</p>
+                  </div>
+                </div>
+                <!-- repetable -->
+                <div class="col-12 col-lg-4">
+                  <div class="text-center mb-4">
+                    <h3 class="display-3 font-black theme-text-primary mb-0">VS</h3>
+                    <div class="coming-match-date">
+                      <h2 class="time">20:30</h2>
+                    </div>
+                    <div class="group mt-3 btn-wrap justify-content-center">
+                      <button class="btn-primary custom-btn-primary" onclick="location.href='tournament-details.html';">Participate Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- repetable -->
+                <div class="col-12 col-lg-3">
+                  <div class="game-card text-center mb-4">
+                    <figure class="mb-0 icon-bg">
+                      <img src="static/picture/teamB-logo.png" class="img-fluid" alt="Fantasy Games">
+                    </figure>
+                    <h3 class="h2 fw-bold mb-3 mt-3 theme-text-white">Astro</h3>
+                    <p class="fs-6 fw-bold theme-text-primary mb-0">Team Tournet B</p>
+                  </div>
+                </div>
+                <!-- repetable -->
+              </div>
+            </div>
+            <div class="timer-box">
+              <p id="timer" class="m-auto"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core services section -->
+  <section class="services py-8">
+    <div class="container">
+      <div class="row animate__animated wow animate__fadeInUp">
+        <div class="col-12 text-center mb-5">
+          <p class="mt-3 mb-3 theme-text-primary fs-4 fw-bold">Powerful Game</p>
+          <h2 class="mb-0 display-2 font-black head text-effect text-shadow">Game Development Services On Time</h2>
+        </div>
+      </div>
+      <div class="row mt-5 align-items-center animate__animated wow animate__fadeInUp">
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+          <div class="services-box">
+            <div class="box-item">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="-5.0 -10.0 110.0 135.0">
+                  <g>
+                    <path d="m76.574 83.137h-3v-36.062c0-0.5-0.41016-0.91016-0.91016-0.91016s-0.91016 0.41016-0.91016 0.91016v36.062h-62.043v-39.879c0-0.5 0.074218-0.98437 0.22656-1.4531 0.046875-0.15234 0.10547-0.31641 0.15234-0.4375l0.03125-0.074219c0.03125-0.074219 0.0625-0.13672 0.074218-0.15234 0.13672-0.28906 0.30469-0.5625 0.48438-0.80469 0.16797-0.21094 0.31641-0.39453 0.48437-0.54688 0.92578-0.92578 2.168-1.4375 3.4844-1.4375h18.652c0.5 0 0.91016-0.41016 0.91016-0.91016s-0.41016-0.91016-0.91016-0.91016h-18.664c-1.8047 0-3.5 0.69531-4.7734 1.9688-0.21094 0.21094-0.42578 0.45312-0.65234 0.74219-0.25781 0.34766-0.48438 0.72656-0.69531 1.1523l-0.12109 0.25781c-0.074219 0.19531-0.15234 0.41016-0.22656 0.62109-0.19531 0.65234-0.30469 1.332-0.30469 2v39.863h-2.9688c-1.3789 0-2.5156 1.1211-2.5156 2.5156v3.0156c0 4.9258 4 8.9258 8.9258 8.9258h58.895c4.9258 0 8.9258-4 8.9258-8.9258v-3.0156c-0.035156-1.3945-1.1562-2.5156-2.5508-2.5156zm-47.938 4.0156v-2.1953h24.195v2.1953c0 1.2578-1.0312 2.2891-2.2891 2.2891l-19.617-0.003906c-1.2578 0-2.2891-1.0273-2.2891-2.2852zm48.637 1.5156c0 3.9102-3.1836 7.0898-7.0898 7.0898h-58.895c-3.9102 0-7.0898-3.1836-7.0898-7.0898v-3.0156c0-0.37891 0.30469-0.68359 0.68359-0.68359h21.934v2.1953c0 2.2734 1.8477 4.1211 4.1211 4.1211h19.621c2.2734 0 4.1211-1.8477 4.1211-4.1211v-2.1953h21.91c0.37891 0 0.68359 0.30469 0.68359 0.68359z"></path>
+                    <path d="m35.863 42.348h-19.031c-1.7109 0-3.1055 1.3945-3.1055 3.1055v30.562c0 1.7109 1.3945 3.1055 3.1055 3.1055h47.805c1.7109 0 3.1055-1.3945 3.1055-3.1055v-30.562c0-1.6523-1.2891-3.0156-2.9375-3.0898-0.51563-0.015625-0.9375 0.36328-0.95313 0.86328-0.03125 0.5 0.36328 0.9375 0.86328 0.95313 0.66797 0.03125 1.1953 0.58984 1.1953 1.2734v30.562c0 0.71094-0.57422 1.2734-1.2734 1.2734h-47.805c-0.71094 0-1.2734-0.57422-1.2734-1.2734l0.003906-30.562c0-0.71094 0.57422-1.2734 1.2734-1.2734h19.031c0.5 0 0.91016-0.41016 0.91016-0.91016-0.003906-0.51172-0.41406-0.92188-0.91406-0.92188z"></path>
+                    <path d="m29.41 55.895c0.18359 0.18359 0.41016 0.27344 0.65234 0.27344 0.22656 0 0.46875-0.089844 0.65234-0.27344l2.5-2.5c0.36328-0.36328 0.36328-0.9375 0-1.2891l-2.5-2.5c-0.36328-0.36328-0.9375-0.36328-1.2891 0-0.36328 0.36328-0.36328 0.9375 0 1.2891l1.8477 1.8477-1.8477 1.8477c-0.37891 0.36328-0.37891 0.94141-0.015625 1.3047z"></path>
+                    <path d="m22.816 49.621c-0.36328-0.36328-0.9375-0.36328-1.2891 0l-2.5 2.5c-0.36328 0.36328-0.36328 0.9375 0 1.2891l2.5 2.5c0.18359 0.18359 0.41016 0.27344 0.65234 0.27344 0.24219 0 0.46875-0.089844 0.65234-0.27344 0.36328-0.36328 0.36328-0.9375 0-1.2891l-1.8477-1.8477 1.8477-1.8477c0.35156-0.37891 0.35156-0.95703-0.015625-1.3047z"></path>
+                    <path d="m24.484 58.121c0.37891 0 0.72656-0.22656 0.86328-0.60547l3.2422-8.8945c0.16797-0.46875-0.074219-1-0.54688-1.168-0.46875-0.16797-1 0.074219-1.168 0.54688l-3.2422 8.8945c-0.16797 0.46875 0.074219 1 0.54688 1.168 0.10937 0.027344 0.21484 0.058594 0.30469 0.058594z"></path>
+                    <path d="m62.105 50.469h-24.895c-0.5 0-0.91016 0.41016-0.91016 0.91016s0.41016 0.91016 0.91016 0.91016h24.895c0.5 0 0.91016-0.41016 0.91016-0.91016s-0.41016-0.91016-0.91016-0.91016z"></path>
+                    <path d="m62.105 55.547h-24.895c-0.5 0-0.91016 0.41016-0.91016 0.91016s0.41016 0.91016 0.91016 0.91016h24.895c0.5 0 0.91016-0.41016 0.91016-0.91016 0-0.50391-0.41016-0.91016-0.91016-0.91016z"></path>
+                    <path d="m62.105 60.621h-5.1367c-0.5 0-0.91016 0.41016-0.91016 0.91016s0.41016 0.91016 0.91016 0.91016h5.1367c0.5 0 0.91016-0.41016 0.91016-0.91016s-0.41016-0.91016-0.91016-0.91016z"></path>
+                    <path d="m32.879 61.531c0 0.5 0.41016 0.91016 0.91016 0.91016h17.137c0.5 0 0.91016-0.41016 0.91016-0.91016s-0.41016-0.91016-0.91016-0.91016h-17.137c-0.5 0-0.91016 0.41016-0.91016 0.91016z"></path>
+                    <path d="m18.453 61.531c0 0.5 0.41016 0.91016 0.91016 0.91016h10.09c0.5 0 0.91016-0.41016 0.91016-0.91016s-0.41016-0.91016-0.91016-0.91016h-10.09c-0.5 0-0.91016 0.41016-0.91016 0.91016z"></path>
+                    <path d="m62.105 65.695h-34.816c-0.5 0-0.91016 0.41016-0.91016 0.91016s0.41016 0.91016 0.91016 0.91016h34.816c0.5 0 0.91016-0.41016 0.91016-0.91016s-0.41016-0.91016-0.91016-0.91016z"></path>
+                    <path d="m19.363 67.531h2.6836c0.5 0 0.91016-0.41016 0.91016-0.91016s-0.41016-0.91016-0.91016-0.91016h-2.6836c-0.5 0-0.91016 0.41016-0.91016 0.91016s0.41016 0.91016 0.91016 0.91016z"></path>
+                    <path d="m62.105 70.773h-5.1367c-0.5 0-0.91016 0.41016-0.91016 0.91016s0.41016 0.91016 0.91016 0.91016h5.1367c0.5 0 0.91016-0.41016 0.91016-0.91016s-0.41016-0.91016-0.91016-0.91016z"></path>
+                    <path d="m19.363 72.605h31.562c0.5 0 0.91016-0.41016 0.91016-0.91016s-0.41016-0.91016-0.91016-0.91016l-31.562 0.003906c-0.5 0-0.91016 0.41016-0.91016 0.91016 0 0.49609 0.41016 0.90625 0.91016 0.90625z"></path>
+                    <path d="m94.062 24.105c-2.6523-2.9688-6.4531-4.668-10.426-4.668h-10.105v-2.5312c0-1.3047-1.0625-2.3789-2.3789-2.3789l-4.0312 0.003906c-0.0625-0.24219 0.015625-0.60547 0.19531-0.84766 0.36328-0.48438 1.0156-0.80469 1.7422-1.1367 0.80469-0.36328 1.7266-0.77344 2.3945-1.5742 1.0312-1.2109 1.1953-3.1055 0.45312-4.8164-0.62109-1.4258-1.7109-2.5156-2.6836-3.4688-0.34766-0.34766-0.9375-0.34766-1.2891 0-0.34766 0.36328-0.34766 0.9375 0 1.2891 0.89453 0.89453 1.8164 1.8164 2.3047 2.9258 0.39453 0.87891 0.48438 2.1211-0.16797 2.8945-0.41016 0.46875-1.0625 0.77344-1.7891 1.1055-0.87891 0.39453-1.8047 0.86328-2.4258 1.6953-0.39453 0.53125-0.60547 1.2422-0.5625 1.9375l-2.7188-0.003906c-1.3047 0-2.3789 1.0625-2.3789 2.3789v2.5312l-9.8906-0.003906c-3.9688 0-7.7734 1.6953-10.426 4.668-2.6953 3-3.9258 6.8789-3.4844 10.926 0.71094 6.4258 5.8945 11.605 12.316 12.316 0.53125 0.0625 1.0625 0.089844 1.5898 0.089844 3.2109 0 6.2891-1.0742 8.7891-3.1055 2.9258-2.3633 4.7578-5.7266 5.1367-9.4531 0.03125-0.28906 0.25781-0.51562 0.54688-0.51562h4.3945c0.28906 0 0.51562 0.22656 0.54688 0.51562 0.37891 3.7266 2.1953 7.0898 5.1367 9.4688 2.9258 2.3633 6.6055 3.4375 10.379 3.0156 6.4258-0.71094 11.605-5.8945 12.316-12.316 0.4375-4.0625-0.80469-7.9414-3.4844-10.941zm-32.031-7.1953c0-0.30469 0.24219-0.54688 0.54688-0.54688h8.5625c0.30469 0 0.54688 0.24219 0.54688 0.54688v2.5312h-9.6523zm33.695 17.922c-0.62109 5.5898-5.1211 10.09-10.695 10.695-3.2734 0.36328-6.4844-0.57422-9.0312-2.6211-2.5469-2.0625-4.1367-4.9844-4.4688-8.2266-0.12109-1.2266-1.1367-2.1523-2.3633-2.1523h-4.3945c-1.2266 0-2.2422 0.92578-2.3633 2.1523-0.33203 3.2422-1.9102 6.168-4.4688 8.2266-2.5469 2.0625-5.7578 2.9844-9.0312 2.6211-5.5898-0.62109-10.09-5.1211-10.695-10.695-0.39453-3.5156 0.68359-6.8945 3.0312-9.5 2.3047-2.5742 5.6055-4.0625 9.0742-4.0625h33.332c3.4531 0 6.7578 1.4844 9.0742 4.0625 2.3047 2.6055 3.3789 5.9844 3 9.5z"></path>
+                    <path d="m83.848 24.184c-1.7109 0-3.1055 1.3945-3.1055 3.1055 0 1.7109 1.3945 3.1055 3.1055 3.1055 1.7109 0 3.1055-1.3945 3.1055-3.1055 0-1.7148-1.3906-3.1055-3.1055-3.1055zm0 4.3789c-0.71094 0-1.2734-0.57422-1.2734-1.2734 0-0.71094 0.57422-1.2734 1.2734-1.2734 0.71094 0 1.2734 0.57422 1.2734 1.2734 0 0.69531-0.55859 1.2734-1.2734 1.2734z"></path>
+                    <path d="m77.668 30.332c-1.7109 0-3.1055 1.3945-3.1055 3.1055s1.3945 3.1055 3.1055 3.1055c1.7109 0 3.1055-1.3945 3.1055-3.1055s-1.3945-3.1055-3.1055-3.1055zm0 4.3945c-0.71094 0-1.2734-0.57422-1.2734-1.2734 0-0.71094 0.57422-1.2734 1.2734-1.2734 0.69531 0 1.2734 0.57422 1.2734 1.2734-0.003906 0.69922-0.5625 1.2734-1.2734 1.2734z"></path>
+                    <path d="m90.137 30.332c-1.7109 0-3.1055 1.3945-3.1055 3.1055s1.3945 3.1055 3.1055 3.1055c1.7109 0 3.1055-1.3945 3.1055-3.1055s-1.3945-3.1055-3.1055-3.1055zm0 4.3945c-0.71094 0-1.2734-0.57422-1.2734-1.2734 0-0.71094 0.57422-1.2734 1.2734-1.2734 0.71094 0 1.2734 0.57422 1.2734 1.2734s-0.5625 1.2734-1.2734 1.2734z"></path>
+                    <path d="m83.848 36.516c-1.7109 0-3.1055 1.3945-3.1055 3.1055 0 1.7109 1.3945 3.1055 3.1055 3.1055 1.7109 0 3.1055-1.3945 3.1055-3.1055 0-1.7109-1.3906-3.1055-3.1055-3.1055zm0 4.3789c-0.71094 0-1.2734-0.57422-1.2734-1.2734 0-0.69531 0.57422-1.2734 1.2734-1.2734 0.71094 0 1.2734 0.57422 1.2734 1.2734 0 0.69531-0.55859 1.2734-1.2734 1.2734z"></path>
+                    <path d="m56.016 29.258h-2.3633c-0.12109 0-0.21094-0.089843-0.21094-0.21094v-2.3633c0-1.1211-0.91016-2.0312-2.0312-2.0312h-2.7578c-1.1211 0-2.0312 0.91016-2.0312 2.0312v2.3633c0 0.12109-0.089844 0.21094-0.21094 0.21094h-2.3633c-1.1211 0-2.0312 0.91016-2.0312 2.0312v2.7578c0 1.1211 0.91016 2.0312 2.0312 2.0312h2.3633c0.12109 0 0.21094 0.089844 0.21094 0.21094v2.3633c0 1.1211 0.91016 2.0312 2.0312 2.0312h2.7578c1.1211 0 2.0312-0.91016 2.0312-2.0312v-2.3633c0-0.12109 0.089844-0.21094 0.21094-0.21094h2.3633c1.1211 0 2.0312-0.91016 2.0312-2.0312v-2.7578c0-1.1055-0.91016-2.0312-2.0312-2.0312zm0.21094 4.7891c0 0.12109-0.089843 0.21094-0.21094 0.21094h-2.3633c-1.1211 0-2.0312 0.91016-2.0312 2.0312v2.3633c0 0.12109-0.089844 0.21094-0.21094 0.21094h-2.7578c-0.12109 0-0.21094-0.089843-0.21094-0.21094v-2.3633c0-1.1211-0.91016-2.0312-2.0312-2.0312h-2.3633c-0.12109 0-0.21094-0.089843-0.21094-0.21094v-2.7578c0-0.12109 0.089843-0.21094 0.21094-0.21094h2.3633c1.1211 0 2.0312-0.91016 2.0312-2.0312v-2.3633c0-0.12109 0.089844-0.21094 0.21094-0.21094h2.7578c0.12109 0 0.21094 0.089844 0.21094 0.21094v2.3633c0 1.1211 0.91016 2.0312 2.0312 2.0312h2.3633c0.12109 0 0.21094 0.089844 0.21094 0.21094z"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="content">
+                <h4>Have Fun Playing Game</h4>
+                <p>Lorem ipsum dolor sitamet const adipiscng Duis eletum sollicitudin is yaugue euismods</p>
+                <a href="services-details.html" class="fw-bold font-extra-small">More Details<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="box-item active">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 512 640" x="0px" y="0px">
+                  <path class="cls-1" d="M267.628,168.966c-5.634-42.417,31.827-78.025,73.951-70.145a5.988,5.988,0,0,1,4.808,4.93c7.506,43.416-28.646,79.467-70.388,73.774l-13.549,12.8v25.434a91.465,91.465,0,0,1,84.807,85.226h10.9a6,6,0,0,1,6,6v17.257a6,6,0,0,1-6,6h-13.71a89.837,89.837,0,0,1-9.474,22.827l9.086,9.086a6,6,0,0,1,0,8.484l-24.405,24.405a6,6,0,0,1-8.484,0l-9.086-9.085a89.882,89.882,0,0,1-22.827,9.472v12.839a6,6,0,0,1-6,6H238.743a6,6,0,0,1-6-6V395.43a89.849,89.849,0,0,1-22.827-9.473l-9.086,9.086a6,6,0,0,1-8.485,0l-24.4-24.405a6,6,0,0,1,0-8.484l9.086-9.086a89.867,89.867,0,0,1-9.472-22.827H153.843a6,6,0,0,1-6-6V306.984a6,6,0,0,1,6-6h10.9A91.463,91.463,0,0,1,250.45,215.7V190.324l-13.55-12.8c-41.742,5.693-77.893-30.358-70.388-73.774a5.989,5.989,0,0,1,4.808-4.93c42.124-7.88,79.586,27.729,73.952,70.145l11.178,10.559,11.178-10.559ZM35.747,253.148,10.914,293.055a5.99,5.99,0,1,0,10.172,6.328l14.8-23.788A221.173,221.173,0,0,0,194.336,468.217a5.978,5.978,0,0,0,3.328-11.484A209.062,209.062,0,0,1,47.56,271.016L71.615,295.07a6,6,0,0,0,8.484-8.484L45.322,251.81a6,6,0,0,0-9.575,1.338Zm217.4,223.105,39.907,24.833a5.99,5.99,0,1,0,6.328-10.172l-23.788-14.8A221.173,221.173,0,0,0,468.217,317.664a5.978,5.978,0,0,0-11.484-3.328,209.062,209.062,0,0,1-185.717,150.1l24.054-24.055a6,6,0,0,0-8.484-8.484L251.81,466.678a6,6,0,0,0,1.338,9.575Zm223.105-217.4,24.833-39.907a5.99,5.99,0,1,0-10.172-6.328l-14.8,23.788A221.173,221.173,0,0,0,317.664,43.783a5.978,5.978,0,0,0-3.328,11.484,209.062,209.062,0,0,1,150.1,185.717l-24.055-24.055a6,6,0,0,0-8.484,8.485l34.777,34.776a6,6,0,0,0,9.575-1.338Zm-217.4-223.1L218.945,10.914a5.99,5.99,0,0,0-6.328,10.172l23.788,14.8A221.173,221.173,0,0,0,43.783,194.336a5.978,5.978,0,0,0,11.484,3.328A209.062,209.062,0,0,1,240.984,47.56L216.929,71.615a6,6,0,1,0,8.485,8.484L260.19,45.322a6,6,0,0,0-1.338-9.575ZM283.557,289.03c0-12.058-9.932-21.125-21.557-23.381v-9.24a6,6,0,0,0-12,0v9.24c-11.625,2.257-21.557,11.323-21.557,23.381,0,32.98,43.114,15.89,43.114,35.908a10.644,10.644,0,0,1-4.134,8.1c-9.675,8.058-26.98,2.624-26.98-8.1a6,6,0,0,0-12,0c0,12.057,9.932,21.124,21.557,23.38v9.241a6,6,0,0,0,12,0v-9.241c11.625-2.256,21.557-11.323,21.557-23.38,0-32.98-43.114-15.89-43.114-35.908a10.644,10.644,0,0,1,4.134-8.1c9.674-8.058,26.98-2.625,26.98,8.1a6,6,0,0,0,12,0ZM312.181,250.8a79.451,79.451,0,0,0-135.632,56.181,6,6,0,0,1-6,6H159.843v5.257h12.45v.019a5.982,5.982,0,0,1,5.859,4.785,79.654,79.654,0,0,0,11.162,27.184,6,6,0,0,1-.455,7.975l-8.193,8.192,15.922,15.921,8.192-8.192.017.017a5.975,5.975,0,0,1,7.506-.767,79.692,79.692,0,0,0,27.174,11.361,6,6,0,0,1,5.266,5.955v11.578h22.514V390.691h.019a5.982,5.982,0,0,1,4.786-5.859,79.659,79.659,0,0,0,27.183-11.162,6,6,0,0,1,7.975.455l8.192,8.192L331.333,366.4l-8.192-8.192.017-.017a5.976,5.976,0,0,1-.767-7.506,79.692,79.692,0,0,0,11.361-27.174,6,6,0,0,1,5.956-5.266h12.449v-5.257H341.451a6,6,0,0,1-6-6,79.2,79.2,0,0,0-23.27-56.181Zm-95-91.907a5.985,5.985,0,1,1,8.2-8.718l8.41,7.944A50.969,50.969,0,0,0,177.7,109.983a50.95,50.95,0,0,0,47.006,56.024L217.18,158.9Zm61.927-.774,8.41-7.944a5.985,5.985,0,1,1,8.2,8.718l-7.528,7.111A50.948,50.948,0,0,0,335.2,109.983,50.968,50.968,0,0,0,279.107,158.122Z"></path>
+                </svg>
+              </div>
+              <div class="content">
+                <h4>Design IN-GAME Assets</h4>
+                <p>Lorem ipsum dolor sitamet const adipiscng Duis eletum sollicitudin is yaugue euismods</p>
+                <a href="services-details.html" class="fw-bold font-extra-small">More Details<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="box-item">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 69 86.25" style="enable-background:new 0 0 69 69;" xml:space="preserve">
+                  <g>
+                    <path d="M7.29968,35.87394l-0.0332,0.22656c-0.17969,1.21094-0.34863,2.35547-0.63086,3.50488L2.94616,54.76945   c-0.89499,3.58676,1.30873,7.28528,5.0166,8.14258c2.92662,0.6758,5.84084-0.64168,7.30762-3.15332   c1.61143-2.42523,3.82703-7.83603,10.46082-13.90228c5.96326-1.2406,11.99646-1.12036,17.93811,0.35754   c5.77966,5.19596,8.8717,11.71653,10.05713,13.54279c1.5041,2.5747,4.46079,3.81513,7.31836,3.15527   c3.0664-0.70898,5.208-3.40039,5.208-6.54492c0-0.55859-0.0625-1.08105-0.19043-1.59375l-3.69043-15.16895   c-0.28223-1.14844-0.45117-2.29297-0.63086-3.50391l-0.03418-0.22949c-1.06482-6.93977-8.20737-11.13958-14.73438-8.81641   c-7.66064,2.53729-15.41138,2.83746-23.0387,0.89783C17.23958,23.99864,8.49647,28.03095,7.29968,35.87394z M60.22351,36.09464   l0.03418,0.22559c0.17578,1.19238,0.3584,2.4248,0.65723,3.64063l3.6914,15.17188c0.09863,0.39648,0.14648,0.7998,0.14648,1.23438   c0,2.44238-1.66406,4.5332-4.04492,5.08398c-2.24316,0.51172-4.52832-0.46777-5.68652-2.4502   c-1.16594-1.79125-4.43052-8.6502-10.45898-14.00391c-0.06445-0.06445-0.14063-0.12988-0.20508-0.18359   c-2.44336-2.1377-3.62109-5.22461-3.23047-8.4707c0.73222-6.06125,6.55932-7.90454,6.66406-7.98145   C52.93803,26.60038,59.2829,29.96238,60.22351,36.09464z M42.72644,29.76652c-1.74521,1.77963-2.80549,4.0553-3.08789,6.39648   c-0.33661,2.79362,0.41698,5.76955,2.17188,8.09961c-2.62207-0.50684-5.25684-0.76074-7.89258-0.76074   c-2.18164,0-4.36426,0.17383-6.53906,0.52148c2.95923-4.12339,2.79537-9.97876-0.84277-13.96875   C31.91101,31.02335,37.32995,30.92765,42.72644,29.76652z M26.11157,31.92582c3.01757,4.1561,2.17652,9.75152-1.4613,12.88757   c-6.15677,5.38626-9.42009,12.26866-10.67383,14.1875c-1.15918,1.9834-3.44434,2.96777-5.67578,2.4502   c-2.92744-0.67695-4.57799-3.59071-3.89844-6.32227l3.69043-15.16699c0.29883-1.2168,0.48145-2.44922,0.65723-3.6416   l0.0332-0.22266C10.06503,27.70057,20.97403,24.8526,26.11157,31.92582z"></path>
+                    <path d="M12.77526,37.70792l-1.25879,1.89844c-0.22852,0.34473-0.13477,0.81055,0.21094,1.03906   c0.33846,0.22651,0.80701,0.13871,1.03906-0.21094l1.53906-2.32129c0.16992-0.25488,0.16602-0.58789-0.00781-0.83984   l-1.53906-2.22852c-0.23535-0.34082-0.70117-0.42773-1.04297-0.19141c-0.34082,0.23535-0.42676,0.70215-0.19141,1.04297   L12.77526,37.70792z"></path>
+                    <path d="M23.44714,40.43546c0.22902,0.34352,0.69439,0.43951,1.04004,0.20996c0.98457-0.65545-0.46013-1.79243-1.0498-2.9375   l1.25195-1.81055c0.23535-0.34082,0.15039-0.80859-0.19043-1.04395c-0.34277-0.23633-0.80957-0.14844-1.04395,0.19043   l-1.54004,2.22852c-0.17383,0.25293-0.17773,0.58594-0.00781,0.8418L23.44714,40.43546z"></path>
+                    <path d="M16.25769,44.32804l1.81152-1.25098l1.89844,1.25879c0.33846,0.22651,0.80701,0.13871,1.03906-0.21094   c0.22852-0.34473,0.13477-0.81055-0.21094-1.03906l-2.32129-1.53906c-0.25488-0.16992-0.58887-0.16797-0.83984,0.00781   l-2.22852,1.53906c-0.34082,0.23535-0.42676,0.70215-0.19141,1.04297S15.91687,44.56339,16.25769,44.32804z"></path>
+                    <path d="M17.63464,33.93742c0.12793,0.08887,0.27637,0.13281,0.42578,0.13281c0.14453,0,0.28906-0.04199,0.41406-0.125   l2.32129-1.53906c0.3457-0.22852,0.43945-0.69434,0.21094-1.03906s-0.69434-0.44141-1.03906-0.21094l-1.89844,1.25879   l-1.81152-1.25098c-0.34082-0.23633-0.80762-0.14844-1.04297,0.19141c-0.23535,0.34082-0.14941,0.80762,0.19141,1.04297   L17.63464,33.93742z"></path>
+                    <path d="M31.98425,36.14054h5.03809c0.41406,0,0.75-0.33594,0.75-0.75s-0.33594-0.75-0.75-0.75h-5.03809   c-0.41406,0-0.75,0.33594-0.75,0.75S31.57019,36.14054,31.98425,36.14054z"></path>
+                    <path d="M31.98425,39.69523h5.03809c0.99203,0,0.99263-1.5,0-1.5h-5.03809c-0.41406,0-0.75,0.33594-0.75,0.75   S31.57019,39.69523,31.98425,39.69523z"></path>
+                    <path d="M47.02819,34.30753c-1.25488,0-2.27539,1.02734-2.27539,2.28906c0,1.25488,1.02051,2.27539,2.27539,2.27539   s2.27539-1.02051,2.27539-2.27539C49.30359,35.33488,48.28308,34.30753,47.02819,34.30753z M47.02819,37.37199   c-0.42773,0-0.77539-0.34766-0.77539-0.77539c0-0.43555,0.34766-0.78906,0.77539-0.78906s0.77539,0.35352,0.77539,0.78906   C47.80359,37.02433,47.45593,37.37199,47.02819,37.37199z"></path>
+                    <path d="M55.28112,38.83781c1.23535,0,2.24121-1.00586,2.24121-2.24219c0-1.24316-1.00586-2.25391-2.24121-2.25391   c-1.23633,0-2.24219,1.01074-2.24219,2.25391C53.03894,37.83195,54.0448,38.83781,55.28112,38.83781z M55.28112,35.84171   c0.40918,0,0.74121,0.33789,0.74121,0.75391c0,0.40918-0.33203,0.74219-0.74121,0.74219s-0.74219-0.33301-0.74219-0.74219   C54.53894,36.1796,54.87194,35.84171,55.28112,35.84171z"></path>
+                    <path d="M51.16101,38.44816c-1.25781,0-2.28027,1.01758-2.28027,2.26758s1.02246,2.26758,2.28027,2.26758   c1.25,0,2.26758-1.01758,2.26758-2.26758S52.41101,38.44816,51.16101,38.44816z M51.16101,41.48331   c-0.43066,0-0.78027-0.34473-0.78027-0.76758s0.34961-0.76758,0.78027-0.76758c0.42285,0,0.76758,0.34473,0.76758,0.76758   S51.58386,41.48331,51.16101,41.48331z"></path>
+                    <path d="M51.16101,34.73136c1.25,0,2.26758-1.01758,2.26758-2.26758s-1.01758-2.26758-2.26758-2.26758   c-1.25781,0-2.28027,1.01758-2.28027,2.26758S49.90319,34.73136,51.16101,34.73136z M51.16101,31.69621   c0.42285,0,0.76758,0.34473,0.76758,0.76758s-0.34473,0.76758-0.76758,0.76758c-0.43066,0-0.78027-0.34473-0.78027-0.76758   S50.73034,31.69621,51.16101,31.69621z"></path>
+                    <path d="M16.02038,21.79484c-0.35059,0.06934-0.60352,0.37793-0.60352,0.73535v2.17188c0,0.41406,0.33594,0.75,0.75,0.75h10.73242   c0.40234,0,0.7334-0.31836,0.74902-0.7207c0.14746-3.69434,3.1582-6.58887,6.85645-6.58887   c3.68262,0,6.68164,2.89453,6.82813,6.58887c0.01563,0.40234,0.34668,0.7207,0.74902,0.7207h10.76074   c0.41406,0,0.75-0.33594,0.75-0.75v-2.17188c0-0.35742-0.25293-0.66602-0.60352-0.73535l-4.25391-0.8457   c-0.32422-1.1543-0.75488-2.18945-1.30566-3.13965l2.40332-3.60645c0.19824-0.29785,0.15918-0.69336-0.09375-0.94629   l-3.49121-3.49121c-0.25293-0.25293-0.64941-0.29297-0.94629-0.09375l-3.60645,2.40332   c-0.94629-0.5459-1.99902-0.9834-3.13965-1.30469l-0.8457-4.25488c-0.06934-0.35059-0.37793-0.60352-0.73535-0.60352h-4.93945   c-0.35742,0-0.66602,0.25293-0.73535,0.60352l-0.8457,4.25488c-1.1416,0.32129-2.19434,0.75879-3.14063,1.30469l-3.60547-2.40332   c-0.2959-0.19824-0.69336-0.16016-0.94629,0.09375l-3.49219,3.49121c-0.25195,0.25195-0.29199,0.64551-0.0957,0.94336   l2.3877,3.62012c-0.54785,1.00391-0.97949,2.05273-1.28613,3.12891L16.02038,21.79484z M21.60632,21.77531   c0.3125-1.24805,0.81055-2.46094,1.48145-3.60645c0.14453-0.24609,0.13574-0.55371-0.02148-0.79199l-2.30371-3.49219l2.625-2.62402   l3.49023,2.32715c0.24609,0.16406,0.56543,0.16699,0.81738,0.00977c1.05273-0.66699,2.22559-1.15625,3.58496-1.49512   c0.28125-0.07031,0.49707-0.29688,0.55371-0.58105l0.81641-4.10938h3.70898l0.81641,4.10938   c0.05664,0.28418,0.27246,0.51074,0.55371,0.58105c1.3584,0.33887,2.53125,0.82813,3.58398,1.49512   c0.25098,0.15723,0.57031,0.1543,0.81738-0.00977l3.49121-2.32715l2.62207,2.62207l-2.32715,3.49121   c-0.16406,0.24707-0.16797,0.56738-0.00977,0.81738c0.66602,1.0498,1.15527,2.22168,1.49609,3.58398   c0.07031,0.28223,0.29688,0.49707,0.58105,0.55371l4.1084,0.81641v0.80664h-9.32031   c-0.5166-4.15332-4.01855-7.30957-8.26758-7.30957c-4.2627,0-7.77734,3.15625-8.2959,7.30957h-9.29199v-0.80664l4.1084-0.81641   C21.30944,22.27238,21.53601,22.05753,21.60632,21.77531z"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="content">
+                <h4>Full-Cycle Game Development</h4>
+                <p>Lorem ipsum dolor sitamet const adipiscng Duis eletum sollicitudin is yaugue euismods</p>
+                <a href="services-details.html" class="fw-bold font-extra-small">More Details<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="box-item">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 100 125" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                  <path d="M83.61,14.709H34.152c-0.924,0-1.68,0.757-1.68,1.681c0,0.924,0.756,1.68,1.68,1.68c0.016,0,0.016,0,0.034,0H83.61  c1.848,0,3.361,1.511,3.361,3.361v40.332H70.573L52.425,43.616c-0.019-0.019-0.041-0.031-0.06-0.049  c-0.036-0.034-0.075-0.063-0.113-0.092c-0.062-0.048-0.128-0.092-0.197-0.13c-0.023-0.013-0.042-0.031-0.065-0.043l-9.506-4.752  c-0.379-0.19-0.801-0.222-1.19-0.116c-0.438-0.125-0.899-0.196-1.376-0.196H18.07c-0.928,0-1.68,0.751-1.68,1.68  c0,0.929,0.752,1.681,1.68,1.681h21.847c0.299,0,0.576,0.085,0.819,0.222l0.861,1.722v8.139H18.07c-0.928,0-1.68,0.751-1.68,1.68  c0,0.929,0.752,1.68,1.68,1.68h25.208c0.928,0,1.681-0.751,1.681-1.68v-3.099l0.023,0.046c0.012,0.024,0.03,0.042,0.043,0.065  c0.04,0.07,0.084,0.137,0.132,0.2c0.029,0.037,0.058,0.075,0.09,0.11c0.018,0.02,0.031,0.042,0.05,0.062l11.019,11.018h-1.761  h-6.706H41.11H13.029V21.431c0-1.85,1.512-3.361,3.361-3.361h4.318c0.924,0,1.68-0.756,1.68-1.68c0-0.924-0.756-1.681-1.68-1.681  H16.39c-3.714,0-6.722,3.008-6.722,6.722v42.013v8.402c0,3.708,3.016,6.722,6.722,6.722h25.208v3.361h-5.042  c-0.928,0-1.68,0.752-1.68,1.681c0,0.928,0.752,1.68,1.68,1.68h6.722h13.444h6.722c0.929,0,1.68-0.752,1.68-1.68  c0-0.929-0.751-1.681-1.68-1.681h-5.042v-3.361H73.12l1.884,1.884c0.983,0.983,2.273,1.473,3.565,1.473  c1.291,0,2.582-0.491,3.565-1.473c0.549-0.549,0.939-1.196,1.182-1.884h0.295c3.707,0,6.722-3.015,6.722-6.722v-8.402V21.431  C90.332,17.718,87.324,14.709,83.61,14.709z M86.971,71.846c0,1.853-1.508,3.361-3.361,3.361h-0.295  c-0.243-0.688-0.632-1.334-1.182-1.884l-8.199-8.2h13.037V71.846z M79.757,78.076c-0.328,0.328-0.758,0.492-1.188,0.492  c-0.43,0-0.86-0.164-1.188-0.492l-1.189-1.188l-1.68-1.681L64.429,65.124l-1.68-1.68l-1.681-1.681L48.861,49.557l1.188-1.188  l1.188-1.188L65.82,61.763l1.681,1.681l1.68,1.68l10.083,10.083l0.492,0.492c0.328,0.328,0.491,0.758,0.491,1.189  C80.248,77.318,80.085,77.749,79.757,78.076z M55.042,81.93H44.959v-3.361h10.083V81.93z M56.722,75.208H43.278H16.39  c-1.854,0-3.361-1.508-3.361-3.361v-6.722H41.11h6.739h6.706h5.122l10.083,10.083H56.722z M48.401,45.266l-0.728,0.727l-0.728,0.727  l-1.456-2.91L48.401,45.266L48.401,45.266z M25.75,16.39c0-0.924,0.757-1.681,1.681-1.681c0.924,0,1.68,0.757,1.68,1.681  c0,0.924-0.757,1.68-1.68,1.68C26.507,18.07,25.75,17.314,25.75,16.39z M53.361,70.166c0,0.929-0.752,1.68-1.68,1.68H48.32  c-0.928,0-1.681-0.751-1.681-1.68c0-0.929,0.752-1.681,1.681-1.681h3.361C52.609,68.485,53.361,69.237,53.361,70.166z M18.07,31.514  c0.924,0,1.681,0.756,1.681,1.68s-0.757,1.681-1.681,1.681c-0.925,0-1.68-0.757-1.68-1.681S17.146,31.514,18.07,31.514z   M23.112,33.195c0-0.924,0.756-1.68,1.681-1.68c0.924,0,1.68,0.756,1.68,1.68s-0.756,1.681-1.68,1.681  C23.868,34.875,23.112,34.119,23.112,33.195z M29.834,33.195c0-0.924,0.756-1.68,1.681-1.68c0.924,0,1.68,0.756,1.68,1.68  s-0.756,1.681-1.68,1.681C30.589,34.875,29.834,34.119,29.834,33.195z M38.237,34.875c-0.925,0-1.681-0.757-1.681-1.681  s0.756-1.68,1.681-1.68c0.924,0,1.68,0.756,1.68,1.68S39.161,34.875,38.237,34.875z M81.93,29.834c-0.924,0-1.68-0.756-1.68-1.68  c0-0.924,0.756-1.68,1.68-1.68c0.924,0,1.681,0.756,1.681,1.68C83.61,29.077,82.854,29.834,81.93,29.834z M75.208,29.834  c-0.924,0-1.68-0.756-1.68-1.68c0-0.924,0.756-1.68,1.68-1.68c0.924,0,1.681,0.756,1.681,1.68  C76.888,29.077,76.132,29.834,75.208,29.834z M16.39,46.639c0-0.929,0.752-1.68,1.68-1.68h16.805c0.928,0,1.68,0.751,1.68,1.68  c0,0.929-0.752,1.681-1.68,1.681H18.07C17.142,48.32,16.39,47.568,16.39,46.639z M55.042,36.556v5.042c0,0.929,0.751,1.68,1.68,1.68  H81.93c0.929,0,1.681-0.751,1.681-1.68c0-0.929-0.752-1.681-1.681-1.681H58.402v-3.361h5.042H81.93c0.929,0,1.681-0.751,1.681-1.68  c0-0.929-0.752-1.681-1.681-1.681H69.257c0.575-0.99,0.909-2.136,0.909-3.361c0-3.707-3.015-6.722-6.722-6.722  c-3.708,0-6.722,3.014-6.722,6.722c0,1.259,0.354,2.434,0.958,3.441C56.174,33.607,55.042,34.951,55.042,36.556z M60.083,29.834  c0-1.852,1.508-3.361,3.361-3.361c1.853,0,3.361,1.508,3.361,3.361c0,1.853-1.508,3.361-3.361,3.361  C61.591,33.195,60.083,31.687,60.083,29.834z"></path>
+                </svg>
+              </div>
+              <div class="content">
+                <h4>Game Co-Development</h4>
+                <p>Lorem ipsum dolor sitamet const adipiscng Duis eletum sollicitudin is yaugue euismods</p>
+                <a href="services-details.html" class="fw-bold font-extra-small">More Details<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="box-item">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="-5.0 -10.0 110.0 135.0">
+                  <path d="m69.461 50.078c0.32812-0.67578 1.1406-0.96094 1.8164-0.63281 0.67578 0.32813 0.96094 1.1406 0.63281 1.8164-1.9922 4.1406-5.1289 7.625-8.9922 10.055-3.7461 2.3555-8.1758 3.7188-12.918 3.7188-6.7148 0-12.789-2.7227-17.191-7.1211-4.3984-4.3984-7.1211-10.477-7.1211-17.191 0-3.5508 0.76562-6.9297 2.1367-9.9766 1.4219-3.1562 3.5039-5.9609 6.0703-8.2305 0.5625-0.49609 1.4219-0.44531 1.918 0.11719s0.44531 1.4219-0.11719 1.918c-2.2734 2.0117-4.1211 4.5039-5.3906 7.3164-1.2148 2.6992-1.8906 5.6953-1.8906 8.8594 0 5.9609 2.4141 11.355 6.3203 15.262s9.3008 6.3203 15.262 6.3203c4.2188 0 8.1523-1.207 11.469-3.2891 3.4336-2.1562 6.2188-5.2578 7.9922-8.9375zm-27.195-29.52c1.2109-0.46484 2.4766-0.82422 3.793-1.0664 1.2617-0.23438 2.582-0.35547 3.9453-0.35547 5.9609 0 11.355 2.4141 15.262 6.3203s6.3203 9.3008 6.3203 15.262c0 0.75391 0.60937 1.3633 1.3633 1.3633 0.75391 0 1.3633-0.60938 1.3633-1.3633 0-6.7148-2.7227-12.789-7.1211-17.191-4.3984-4.3984-10.477-7.1211-17.191-7.1211-1.5 0-2.9805 0.14062-4.4336 0.40625-1.4688 0.26953-2.8984 0.67578-4.2734 1.2031-0.69922 0.26953-1.0508 1.0508-0.78125 1.7539 0.26953 0.69922 1.0508 1.0508 1.7539 0.78125zm11.902-10.969c-1.3984-0.92578-2.8203-1.8633-4.168-1.8633s-2.7695 0.9375-4.168 1.8633c-1.2383 0.81641-2.4648 1.6289-3.8633 2.0117-1.4336 0.39453-2.9336 0.30469-4.4258 0.21875-1.5938-0.09375-3.1797-0.1875-4.1992 0.40625-1.0234 0.60156-1.707 2.0234-2.3867 3.4414-0.64453 1.3477-1.2891 2.6875-2.3086 3.7031-1.0156 1.0156-2.3594 1.6602-3.7031 2.3086-1.418 0.67969-2.8398 1.3633-3.4414 2.3867-0.59766 1.0195-0.50391 2.6055-0.40625 4.1992 0.089844 1.4922 0.17969 2.9883-0.21875 4.4258-0.38672 1.3984-1.1953 2.625-2.0117 3.8633-0.92578 1.3984-1.8633 2.8203-1.8633 4.168s0.9375 2.7695 1.8633 4.168c0.81641 1.2383 1.6289 2.4648 2.0117 3.8633 0.39453 1.4336 0.30469 2.9336 0.21875 4.4258-0.09375 1.5938-0.1875 3.1797 0.40625 4.1992 0.60156 1.0234 2.0234 1.707 3.4414 2.3867 1.3477 0.64453 2.6875 1.2891 3.7031 2.3086 1.0156 1.0156 1.6602 2.3594 2.3086 3.7031 0.25391 0.52734 0.50781 1.0586 0.78125 1.5469 0.03125 0.046875 0.058594 0.09375 0.082031 0.14062 0.4375 0.75781 0.92188 1.3984 1.5273 1.7539 1.0195 0.59766 2.6055 0.50391 4.1992 0.40625 1.4922-0.089844 2.9883-0.17969 4.4258 0.21875 1.3984 0.38672 2.625 1.1953 3.8633 2.0117 0.16406 0.10938 0.32812 0.21484 0.49219 0.32422 0.035156 0.019531 0.070313 0.042968 0.10156 0.066406 1.207 0.78125 2.418 1.4727 3.5742 1.4727s2.3711-0.69141 3.5742-1.4727c0.03125-0.023438 0.066406-0.046875 0.10156-0.066406 0.16406-0.10547 0.32812-0.21484 0.49219-0.32422 1.2383-0.81641 2.4648-1.6289 3.8633-2.0117 1.4336-0.39453 2.9336-0.30469 4.4258-0.21875 1.5938 0.09375 3.1797 0.1875 4.1992-0.40625 0.60547-0.35547 1.0898-0.99609 1.5273-1.7539 0.023438-0.050782 0.050781-0.097656 0.082031-0.14062 0.27344-0.48828 0.52734-1.0156 0.78125-1.5469 0.64453-1.3477 1.2891-2.6875 2.3086-3.7031 1.0156-1.0156 2.3594-1.6602 3.7031-2.3086 1.418-0.67969 2.8398-1.3633 3.4414-2.3867 0.59766-1.0195 0.50391-2.6055 0.40625-4.1992-0.089844-1.4922-0.17969-2.9883 0.21875-4.4258 0.38672-1.3984 1.1953-2.625 2.0117-3.8633 0.92578-1.3984 1.8633-2.8203 1.8633-4.168s-0.9375-2.7695-1.8633-4.168c-0.81641-1.2383-1.6289-2.4648-2.0117-3.8633-0.39453-1.4336-0.30469-2.9336-0.21875-4.4258 0.09375-1.5938 0.1875-3.1797-0.40625-4.1992-0.60156-1.0234-2.0234-1.707-3.4414-2.3867-1.3477-0.64453-2.6875-1.2891-3.7031-2.3086-1.0156-1.0156-1.6602-2.3594-2.3086-3.7031-0.67969-1.418-1.3633-2.8398-2.3867-3.4414-1.0195-0.59766-2.6055-0.50391-4.1992-0.40625-1.4922 0.089844-2.9883 0.17969-4.4258-0.21875-1.3984-0.38672-2.625-1.1953-3.8633-2.0117zm-10.105 64.355-4.25 15.867-3.7461-7.5078h-0.003906c-0.023438-0.046876-0.050781-0.097657-0.085938-0.14453-0.41406-0.62891-1.2578-0.79688-1.8867-0.38281l-7.0039 4.6289 4.1211-15.383c0.23438 0.19531 0.48438 0.375 0.75781 0.53516 1.7383 1.0195 3.7305 0.89844 5.7344 0.78125 1.2773-0.074219 2.5586-0.15234 3.5508 0.12109 0.87891 0.24219 1.8359 0.84375 2.8086 1.4844zm24.727-2.9219 4.1211 15.383-7.0039-4.6289c-0.62891-0.41406-1.4727-0.24219-1.8867 0.38281-0.03125 0.046875-0.058593 0.09375-0.085937 0.14453h-0.003906l-3.7461 7.5078-4.25-15.867c0.97266-0.64062 1.9297-1.2422 2.8086-1.4844 0.99219-0.27344 2.2734-0.19531 3.5508-0.12109 2.0039 0.11719 3.9922 0.23828 5.7344-0.78125 0.27344-0.16016 0.52734-0.33984 0.75781-0.53516zm-18.789-66.023c-2.1562 0-3.9258 1.168-5.6719 2.3203-1.0625 0.70313-2.1172 1.3984-3.0781 1.6602-0.99219 0.27344-2.2734 0.19531-3.5508 0.12109-2.0039-0.11719-3.9922-0.23828-5.7305 0.78125-1.7383 1.0195-2.6016 2.8164-3.4648 4.6133-0.53906 1.1211-1.0742 2.2383-1.7852 2.9492-0.71094 0.71094-1.8281 1.2461-2.9492 1.7852-1.793 0.86328-3.5938 1.7266-4.6133 3.4648-1.0195 1.7383-0.89844 3.7305-0.78125 5.7344 0.074219 1.2773 0.15234 2.5586-0.12109 3.5508-0.26562 0.96094-0.96094 2.0117-1.6602 3.0781-1.1523 1.7461-2.3203 3.5156-2.3203 5.6719s1.168 3.9258 2.3203 5.6719c0.70312 1.0625 1.3984 2.1172 1.6602 3.0781 0.27344 0.99219 0.19531 2.2734 0.12109 3.5508-0.11719 2.0039-0.23828 3.9922 0.78125 5.7344 1.0195 1.7383 2.8164 2.6016 4.6133 3.4648 1.1211 0.53906 2.2383 1.0742 2.9492 1.7852s1.2461 1.8281 1.7852 2.9492c0.20703 0.42969 0.41406 0.86328 0.63281 1.2812l-5.6094 20.941c-0.19531 0.72656 0.23828 1.4727 0.96484 1.668 0.41016 0.10938 0.82812 0.019531 1.1484-0.21094l8.668-5.7305 4.6641 9.3477c0.33594 0.67578 1.1523 0.94922 1.8281 0.61328 0.37891-0.1875 0.62891-0.52734 0.71875-0.90625l4.957-18.5c1.0898 0.57812 2.2344 0.99609 3.5195 0.99609s2.4336-0.41406 3.5195-0.99609l4.957 18.5c0.089844 0.38281 0.34375 0.71875 0.71875 0.90625 0.67578 0.33594 1.4922 0.0625 1.8281-0.61328l4.6641-9.3477 8.668 5.7305c0.32031 0.23047 0.73828 0.32031 1.1484 0.21094 0.72656-0.19531 1.1562-0.94141 0.96484-1.668l-5.6094-20.941c0.21875-0.42188 0.42578-0.85156 0.63281-1.2812 0.53906-1.1211 1.0742-2.2383 1.7852-2.9492 0.71094-0.71094 1.8281-1.2461 2.9492-1.7852 1.793-0.86328 3.5938-1.7266 4.6133-3.4648 1.0195-1.7383 0.89844-3.7305 0.78125-5.7344-0.074219-1.2773-0.15234-2.5586 0.12109-3.5508 0.26562-0.96094 0.96094-2.0117 1.6602-3.0781 1.1523-1.7461 2.3203-3.5156 2.3203-5.6719s-1.168-3.9258-2.3203-5.6719c-0.70313-1.0625-1.3984-2.1172-1.6602-3.0781-0.27344-0.99219-0.19531-2.2734-0.12109-3.5508 0.11719-2.0039 0.23828-3.9922-0.78125-5.7305-1.0195-1.7383-2.8164-2.6016-4.6133-3.4648-1.1211-0.53906-2.2383-1.0742-2.9492-1.7852-0.71094-0.71094-1.2461-1.8281-1.7852-2.9492-0.86328-1.793-1.7266-3.5938-3.4648-4.6133-1.7383-1.0195-3.7305-0.89844-5.7305-0.78125-1.2773 0.074219-2.5586 0.15234-3.5508-0.12109-0.96094-0.26562-2.0117-0.96094-3.0781-1.6602-1.7461-1.1523-3.5156-2.3203-5.6719-2.3203zm-8.3828 44.637c2.0078 2.2344 4.8984 3.8398 8.3828 5.1719 3.4844-1.332 6.375-2.9375 8.3828-5.1719 2.0469-2.2773 3.2148-5.2852 3.2148-9.4453v-9.5781c-3.0781-0.73438-5.6094-1.4336-7.5977-2.1016-1.7188-0.57812-3.0508-1.1445-4.0039-1.6992-0.94922 0.55859-2.2852 1.1211-4.0039 1.6992-1.9844 0.66797-4.5195 1.3672-7.5977 2.1016v9.5781c0 4.1562 1.1719 7.1641 3.2148 9.4453zm7.9141 7.9062c0.29297 0.10547 0.62109 0.11719 0.9375 0 4.0742-1.5078 7.4961-3.375 9.9375-6.0938 2.4922-2.7773 3.918-6.3672 3.918-11.258v-10.652h-0.003907c0-0.62109-0.42578-1.1836-1.0586-1.3242-3.4883-0.80859-6.2891-1.5664-8.4023-2.2734-2-0.67188-3.3359-1.2734-4.0078-1.8047-0.48437-0.39844-1.1953-0.41797-1.707-0.011719-0.66797 0.53125-2.0078 1.1367-4.0195 1.8125-2.0938 0.70312-4.8672 1.4531-8.3164 2.2539-0.64844 0.10547-1.1445 0.66797-1.1445 1.3477v10.652c0 4.8867 1.4258 8.4766 3.918 11.258 2.4414 2.7188 5.8555 4.5859 9.9258 6.0898l0.011719 0.003907zm-6.7617-17.352v-7.2773c0-0.75391-0.60938-1.3633-1.3633-1.3633s-1.3633 0.60938-1.3633 1.3633v7.2773c0 0.75391 0.60938 1.3633 1.3633 1.3633s1.3633-0.60938 1.3633-1.3633zm1.2422 6.4375c-0.22266-0.48438-0.41797-1.0117-0.58984-1.5742-0.17188-0.56641-0.30859-1.1562-0.41406-1.7695-0.125-0.74219-0.82422-1.2422-1.5664-1.1172-0.74219 0.125-1.2422 0.82422-1.1172 1.5664s0.28906 1.4414 0.48828 2.1016c0.19922 0.66016 0.44141 1.3047 0.72656 1.9258 0.3125 0.68359 1.1172 0.98438 1.8008 0.67188s0.98438-1.1172 0.67188-1.8008z" fill-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div class="content">
+                <h4>Game Quality Assurance</h4>
+                <p>Lorem ipsum dolor sitamet const adipiscng Duis eletum sollicitudin is yaugue euismods</p>
+                <a href="services-details.html" class="fw-bold font-extra-small">More Details<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- repetable -->
+            <div class="box-item">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 160 200" style="enable-background:new 0 0 160 160;" xml:space="preserve">
+                  <g>
+                    <path d="M87,22H73c-2.8,0-5,2.2-5,5v8.7c-3.3,0.9-6.5,2.2-9.5,3.9l-6.1-6.1c-0.9-0.9-2.2-1.5-3.5-1.5s-2.6,0.5-3.5,1.5l-9.9,9.9   c-0.9,0.9-1.5,2.2-1.5,3.5s0.5,2.6,1.5,3.5l6.1,6.1c-1.7,3-3,6.1-3.9,9.5H29c-2.8,0-5,2.2-5,5v14c0,2.8,2.2,5,5,5h4   c1.1,0,2-0.9,2-2s-0.9-2-2-2h-4c-0.6,0-1-0.4-1-1V71c0-0.6,0.4-1,1-1h10.2c0.9,0,1.7-0.6,1.9-1.5c1-4,2.5-7.7,4.6-11.2   c0.5-0.8,0.4-1.8-0.3-2.5l-7.2-7.2C38,47.3,38,47,38,46.9s0-0.5,0.3-0.7l9.9-9.9c0.3-0.3,0.6-0.3,0.7-0.3s0.5,0,0.7,0.3l7.2,7.2   c0.7,0.7,1.7,0.8,2.5,0.3c3.5-2.1,7.2-3.7,11.2-4.6c0.9-0.2,1.5-1,1.5-1.9V27c0-0.6,0.4-1,1-1h14c0.6,0,1,0.4,1,1v10.2   c0,0.9,0.6,1.7,1.5,1.9c4,1,7.7,2.5,11.2,4.6c0.8,0.5,1.8,0.4,2.5-0.3l7.2-7.2c0.3-0.3,0.6-0.3,0.7-0.3s0.5,0,0.7,0.3l9.9,9.9   c0.3,0.3,0.3,0.6,0.3,0.7s0,0.5-0.3,0.7l-7.2,7.2c-0.7,0.7-0.8,1.7-0.3,2.5c2.1,3.5,3.7,7.2,4.6,11.2c0.2,0.9,1,1.5,1.9,1.5H131   c0.6,0,1,0.4,1,1v14c0,0.6-0.4,1-1,1h-4c-1.1,0-2,0.9-2,2s0.9,2,2,2h4c2.8,0,5-2.2,5-5V71c0-2.8-2.2-5-5-5h-8.7   c-0.9-3.3-2.2-6.5-3.9-9.5l6.1-6.1c0.9-0.9,1.5-2.2,1.5-3.5s-0.5-2.6-1.5-3.5l-9.9-9.9c-0.9-0.9-2.2-1.5-3.5-1.5s-2.6,0.5-3.5,1.5   l-6.1,6.1c-3-1.7-6.1-3-9.5-3.9V27C92,24.2,89.8,22,87,22z"></path>
+                    <path d="M90.1,63.9c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6l6-6c0.8-0.8,0.8-2,0-2.8l-6-6c-0.8-0.8-2-0.8-2.8,0s-0.8,2,0,2.8   l4.6,4.6l-4.6,4.6C89.3,61.9,89.3,63.1,90.1,63.9z"></path>
+                    <path d="M69.9,49.1c-0.8-0.8-2-0.8-2.8,0l-6,6c-0.8,0.8-0.8,2,0,2.8l6,6c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6   c0.8-0.8,0.8-2,0-2.8l-4.6-4.6l4.6-4.6C70.7,51.1,70.7,49.9,69.9,49.1z"></path>
+                    <path d="M74,69c0.7,0,1.4-0.4,1.7-1l12-21c0.5-1,0.2-2.2-0.7-2.7S84.8,44,84.3,45l-12,21c-0.5,1-0.2,2.2,0.7,2.7   C73.3,68.9,73.7,69,74,69z"></path>
+                    <path d="M72,94h-7v-7c0-1.1-0.9-2-2-2s-2,0.9-2,2v7h-7c-1.1,0-2,0.9-2,2s0.9,2,2,2h7v7c0,1.1,0.9,2,2,2s2-0.9,2-2v-7h7   c1.1,0,2-0.9,2-2S73.1,94,72,94z"></path>
+                    <path d="M90,93c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3S91.7,93,90,93z"></path>
+                    <path d="M106,99c1.7,0,3-1.3,3-3s-1.3-3-3-3s-3,1.3-3,3S104.3,99,106,99z"></path>
+                    <path d="M98,91c1.7,0,3-1.3,3-3s-1.3-3-3-3s-3,1.3-3,3S96.3,91,98,91z"></path>
+                    <path d="M98,107c1.7,0,3-1.3,3-3s-1.3-3-3-3s-3,1.3-3,3S96.3,107,98,107z"></path>
+                    <path d="M100,128c0.8,0,1.5-0.1,2.2-0.3l0.3,0.6c2.5,5.9,8.3,9.7,14.7,9.7h2.4c4.3,0,8.1-2,10.6-5.5s3.1-7.8,1.7-11.8l-11-32   c-2.4-7-8.6-11.9-15.8-12.7v-3c0-2.2-1.8-4-4-4h-6c-2.2,0-4,1.8-4,4v3H70v-3c0-2.2-1.8-4-4-4h-6c-2.2,0-4,1.8-4,4v3   c-7.6,0.4-14.3,5.5-16.8,12.8l-11,32c-1.4,4-0.8,8.3,1.7,11.8s6.3,5.5,10.6,5.5h2.4c6.4,0,12.2-3.8,14.7-9.7l0.3-0.6   c0.7,0.2,1.5,0.3,2.2,0.3c5,0,9-4,9-9c0-0.7-0.1-1.4-0.2-2c1.9-0.7,3.9-1,5.9-1h10.7c2,0,4,0.3,5.9,1c-0.1,0.6-0.2,1.3-0.2,2   C91,124,95,128,100,128z M95,119c0-2.8,2.2-5,5-5s5,2.2,5,5s-2.2,5-5,5S95,121.8,95,119z M95,73h6v3h-6V73z M66,73v3h-6v-3H66z    M60,124c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S62.8,124,60,124z M85.4,112H74.6c-2.6,0-5.2,0.5-7.6,1.4c-1.7-2.1-4.2-3.4-7-3.4   c-5,0-9,4-9,9c0,2.8,1.2,5.2,3.2,6.9l-0.4,0.9c-1.9,4.4-6.2,7.2-11,7.2h-2.4c-2.9,0-5.6-1.4-7.3-3.8s-2.1-5.4-1.2-8.2l11-32   c2.1-5.9,7.8-10,14.2-10h45.8c6.4,0,12.1,4.1,14.2,10.1l11,32c1,2.8,0.5,5.8-1.2,8.2c-1.7,2.4-4.4,3.8-7.3,3.8h-2.4   c-4.8,0-9.1-2.8-11-7.2l-0.4-0.9c1.9-1.7,3.2-4.1,3.2-6.9c0-5-4-9-9-9c-2.8,0-5.4,1.3-7,3.4C90.5,112.5,88,112,85.4,112z"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="content">
+                <h4>Game Maintenance & Support</h4>
+                <p>Lorem ipsum dolor sitamet const adipiscng Duis eletum sollicitudin is yaugue euismods</p>
+                <a href="services-details.html" class="fw-bold font-extra-small">More Details<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- repetable -->
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="picture-con">
+            <div class="image">
+              <img src="static/picture/pic05.jpg" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- call to action  -->
+  <div class="cta set-bg" data-setbg="assets/images/section/video-sec-bg.jpg ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+          <p class="fs-4 theme-text-primary fw-bold px-5 mb-3">To Make Requests For The Further Information
+          </p>
+          <h6 class="mb-4 display-2 font-black head text-effect text-shadow">View the Unique Experience</h6>
+          <a href="#" class="video-btn custom-btn-secondary wave-button video_model">
+            <i class="bi bi-play"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- team section -->
+  <section class="our-team py-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 animate__animated wow animate__fadeIn" data-wow-delay="1.4s">
+          <p class="mt-3 mb-3 theme-text-primary fs-4 fw-bold">Our Team Specialists</p>
+          <h2 class="mb-0 display-2 font-black head text-effect text-shadow">Active Players</h2>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 col-md-4 col-lg-3 animate__animated wow animate__fadeInLeft" data-wow-delay="1.5s">
+          <div class="team-card">
+            <figure class="mb-0 overflow-hidden">
+              <img src="static/picture/team01.png" class="img-fluid" alt="Qotes icon">
+            </figure>
+            <div class="text-center p-3">
+              <p class="fs-5 mb-3 fw-bold">Kenly Abraham</p>
+              <p class="mb-0 theme-text-primary fw-bold">Blockchain Expert</p>
+            </div>
+          </div>
+        </div>
+        <!-- repetable -->
+        <div class="col-12 col-md-4 col-lg-3 animate__animated wow animate__fadeInLeft" data-wow-delay="1.6s">
+          <div class="team-card">
+            <figure class="mb-0 overflow-hidden">
+              <img src="static/picture/team02.png" class="img-fluid" alt="Qotes icon">
+            </figure>
+            <div class="text-center p-3">
+              <p class="fs-5 mb-3 fw-bold">Julia Doe</p>
+              <p class="mb-0 theme-text-primary fw-bold">Director</p>
+            </div>
+          </div>
+        </div>
+        <!-- repetable -->
+        <div class="col-12 col-md-4 col-lg-3 animate__animated wow animate__fadeInLeft" data-wow-delay="1.7s">
+          <div class="team-card">
+            <figure class="mb-0 overflow-hidden">
+              <img src="static/picture/team03.png" class="img-fluid" alt="Qotes icon">
+            </figure>
+            <div class="text-center p-3">
+              <p class="fs-5 mb-3 fw-bold">Jane Doe</p>
+              <p class="mb-0 theme-text-primary fw-bold">Developer</p>
+            </div>
+          </div>
+        </div>
+        <!-- repetable -->
+        <div class="col-12 col-md-4 col-lg-3 animate__animated wow animate__fadeInLeft" data-wow-delay="1.8s">
+          <div class="team-card">
+            <figure class="mb-0 overflow-hidden">
+              <img src="static/picture/team04.png" class="img-fluid" alt="Qotes icon">
+            </figure>
+            <div class="text-center p-3">
+              <p class="fs-5 mb-3 fw-bold">Babura Abraham</p>
+              <p class="mb-0 theme-text-primary fw-bold">Product Director</p>
+            </div>
+          </div>
+        </div>
+        <!-- repetable -->
+      </div>
+    </div>
+  </section>
+  <!-- best counts section -->
+  <section class="counts py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12 mb-5 mb-lg-0 text-center">
+          <h2 class="mb-0 display-2 font-black head text-effect text-shadow">Unique Gaming Experience</h2>
+        </div>
+      </div>
+      <div class="my-5 theme-gradient-bg p-4 theme-border-radius">
+        <div class="row mt-0 mt-lg-5" id="counter">
+          <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-3 mb-lg-0">
+            <div class="list align-items-center">
+              <figure class="mb-0 image-icon">
+                <img src="static/picture/experience-icon01.png" alt="Gaming Experience">
+              </figure>
+              <div class="con">
+                <span class="fs-1 font-black mb-2 counter-value" data-count="1969">0</span><span class="fs-1 font-black ms-1">+</span>
+                <p class="mb-0 theme-text-secondary fw-bold">Active Users</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-3 mb-lg-0">
+            <div class="list align-items-center">
+              <figure class="mb-0 image-icon">
+                <img src="static/picture/experience-icon02.png" alt="Gaming Experience">
+              </figure>
+              <div class="con">
+                <span class="fs-1 font-black mb-2 counter-value" data-count="9589">0</span><span class="fs-1 font-black ms-1">+</span>
+                <p class="mb-0 theme-text-secondary fw-bold">Developers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-3 mb-lg-0">
+            <div class="list align-items-center">
+              <figure class="mb-0 image-icon">
+                <img src="static/picture/experience-icon03.png" alt="Gaming Experience">
+              </figure>
+              <div class="con">
+                <span class="fs-1 font-black mb-2 counter-value" data-count="389">0</span><span class="fs-1 font-black ms-1">+</span>
+                <p class="mb-0 theme-text-secondary fw-bold">Unique Games</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 col-xl-3 mb-3 mb-lg-0">
+            <div class="list align-items-center">
+              <figure class="mb-0 image-icon">
+                <img src="static/picture/experience-icon04.png" alt="Gaming Experience">
+              </figure>
+              <div class="con">
+                <span class="fs-1 font-black mb-2 counter-value" data-count="2599">0</span><span class="fs-1 font-black ms-1">+</span>
+                <p class="mb-0 theme-text-secondary fw-bold">Lucky Winners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer Part -->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <img src="static/picture/brand.png" class="img-fluid mb-4 logo" alt="Brand light">
+          <p class="p-5 pt-0 ps-0 mb-0 font-small">Bearing a simple yet catchy concept of earning money
+            via the
+            best
+            fantasy game Apps
+            while watching your favourite sports</p>
+          <h3 class="mt-0 h5 fw-bold mb-4">Connect with us</h3>
+          <div class="d-flex justify-content-start social mt-3">
+            <a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
+            <a href="javascript:void(0)"><i class="bi bi-twitter-x"></i></a>
+            <a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
+            <a href="javascript:void(0)"><i class="bi bi-instagram"></i></a>
+          </div>
+          <h3 class="h5 fw-bold mb-4 mt-3">Download App</h3>
+          <div class="mb-5 d-flex">
+            <a href="javascript:void(0)" class="d-inline-flex align-items-center theme-bg-accent-one px-3 py-2 download-btn">
+              <div class="flex-shrink-0">
+                <img src="static/picture/play-icon.png" class="img-fluid" alt="Google-Play" title="Google-Play">
+              </div>
+              <div class="flex-grow-1 ms-2 font-extra-small text-start theme-text-white">
+                <span class="mb-0">Get it on</span>
+                <span class="mb-0 fw-bold d-block">Google Play</span>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="d-inline-flex align-items-center theme-bg-accent-one px-4 py-2 download-btn ms-3">
+              <div class="flex-shrink-0">
+                <img src="static/picture/apple-icon.png" class="img-fluid" alt="apple" title="apple">
+              </div>
+              <div class="flex-grow-1 ms-2 font-extra-small text-start theme-text-white">
+                <span class="mb-0">Get it on</span>
+                <span class="mb-0 fw-bold d-block">App Store</span>
+              </div>
+            </a>
+          </div>
+          <!-- download our app end -->
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 offset-lg-1 mb-5 mb-lg-0">
+          <div class="row">
+            <div class="col">
+              <h3 class="h5 fw-bold mb-4">Quick Links</h3>
+              <ul class="link-list">
+                <li><a href="index.html" class="footer-link-effect">Home</a></li>
+                <li><a href="about.html" class="footer-link-effect">About Us</a></li>
+                <li><a href="tournament.html" class="footer-link-effect">Fantasy Games</a></li>
+                <li><a href="about.html#experience-sec" class="footer-link-effect">How To Play</a></li>
+                <li><a href="tournament-details.html" class="footer-link-effect">Join Games</a></li>
+                <li><a href="player.html" class="footer-link-effect">Player System</a></li>
+              </ul>
+              <!-- quick link end -->
+            </div>
+            <div class="col">
+              <h3 class="h5 fw-bold mb-4">Support</h3>
+              <ul class="link-list">
+                <li><a href="privacy.html" class="footer-link-effect">Privacy</a></li>
+                <li><a href="contact.html" class="footer-link-effect">Support</a></li>
+                <li><a href="privacy.html" class="footer-link-effect">Terms & Condition</a></li>
+                <li><a href="services.html" class="footer-link-effect">Services</a></li>
+                <li><a href="services-details.html" class="footer-link-effect">Services Details</a></li>
+                <li><a href="player-details.html" class="footer-link-effect">Player Details</a></li>
+                <li><a href="faq.html" class="footer-link-effect">FAQ</a></li>
+              </ul>
+              <!-- Support link end -->
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3 class="h5 fw-bold mb-4">Company</h3>
+          <ul class="link-list">
+            <li><a href="gallery.html" class="footer-link-effect">Gallery</a></li>
+            <li><a href="gallery-details.html" class="footer-link-effect">Gallery Details</a></li>
+            <li><a href="gallery-mixed.html" class="footer-link-effect">Gallery Mixed</a></li>
+            <li><a href="shop.html" class="footer-link-effect">Gaming Shop</a></li>
+            <li><a href="shop-details.html" class="footer-link-effect">Shop Details</a></li>
+            <li><a href="blog.html" class="footer-link-effect">Our Blogs</a></li>
+            <li><a href="blog-details.html" class="footer-link-effect">Blogs Details</a></li>
+          </ul>
+          <!-- quick link end -->
+        </div>
+      </div>
+      <!-- footer bottom Part -->
+      <div class="row align-items-center">
+        <div class="col-12 text-center my-4">
+          <p class="mb-0 font-small">Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        </div>
+        <div class="col-12 col-lg-6 offset-lg-3">
+          <div class="p-1">
+            <ul class="d-flex justify-content-between align-items-center">
+              <li><img src="static/picture/visa.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/mastercard.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/upi.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-01.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-02.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-03.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-04.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-05.png" class="img-fluid" alt="payment"></li>
+              <li><img src="static/picture/crypto-06.png" class="img-fluid" alt="payment"></li>
+            </ul>
+          </div>
+          <!-- payment methods end -->
+        </div>
+      </div>
+    </div>
+    <a href="#wrapper" data-type="section-switch" class="scrollup"><i class="bi bi-chevron-double-up"></i></a>
+  </footer>
+
+  <!-- cursor dot part -->
+  <div class="cursor"></div>
+  <div class="cursor-f"></div>
+
+
+  <!-- js file attached -->
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/gsap.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/jquery.magnific-popup.min.js"></script>
+  <script src="static/js/color-modes.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="static/js/counter.js"></script>
+</body>
+
+</html>
