@@ -1,37 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   // 游戏数据
   const games = {
-    cryptogram: {
-      banner: 'static/image/cryptogram/banner.png',
-      logo: 'static/image/cryptogram/logo.png',
-      title: { en: 'Cryptogram', zh: 'Cryptogram' },
-      brief: {
-        en: 'Crack the code and challenge your mind with creative ciphers!',
-        zh: '破解密码，挑战你的思维极限！'
-      },
-      features: [
-        { en: 'Unique puzzles every day', zh: '每日独特谜题' },
-        { en: 'Hints and tips for beginners', zh: '新手友好的提示系统' },
-        { en: 'Minimalist design', zh: '极简设计' }
-      ],
-      screenshots: [
-        'static/image/cryptogram/screenshot1.png',
-        'static/image/cryptogram/screenshot2.png',
-        'static/image/cryptogram/screenshot3.png'
-      ],
-      desc: {
-        en: 'Cryptogram is a brain-teasing puzzle game where you decipher secret codes. Each puzzle offers a new challenge, perfect for players who love word games and logic!',
-        zh: 'Cryptogram是一款烧脑的解密游戏，每一关都需要你破解不同的密码。丰富的谜题，适合喜欢文字和逻辑挑战的玩家！'
-      },
-      downloads: {
-        en: '100K+ downloads',
-        zh: '10万+下载',
-        google: 'https://play.google.com/store/apps/details?id=cryptogram.cypher.decrypt.code.word.puzzle.number', // Google Play 下载链接
-        apple: 'https://apps.apple.com/us/app/cryptogram-word-puzzle-master/id6670599725'   // App Store 下载链接
-      },
-      tag: { en: 'Puzzle', zh: '益智' },
-      action: { en: 'Play Now', zh: '立即试玩' }
-    },
     mathcross: {
       banner: 'static/image/mathcross/banner.png',
       logo: 'static/image/mathcross/logo.png',
@@ -138,4 +107,4 @@ document.addEventListener('DOMContentLoaded', function() {
       appleLink.style.display = 'none';
     }
   }
-}); 
+});
